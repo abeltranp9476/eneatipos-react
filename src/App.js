@@ -11,92 +11,216 @@ function App() {
   const perPage = 30;
   const totalSteps = 9;
   const [step, setStep] = useState(1);
-  const [result, setResult] = useState(null);
   const [pageStart, setPageStart] = useState(0);
   const [pageEnd, setPageEnd] = useState(perPage);
   const questions = data[2].data;
+  const [finish, setFinish] = useState(false);
+  const [showResult, setShowResult] = useState(false);
+  const [desglose, setDesglose] = useState([]);
+  const [eneatipo, setEneatipo] = useState(false);
+  const [alas, setAlas] = useState([]);
+  const [ala, setAla] = useState(false);
+
+  const [formState, setFormState] = useState({
+    values: {},
+  });
 
   useEffect(() => {
     setPageStart(perPage * (step - 1));
     setPageEnd(perPage * step);
   }, [pageStart, step])
 
-  const handleNext = () => {
+
+  useEffect(() => {
+    const answerTotal = Object.keys(formState.values).length;
+    if (finish && answerTotal < 100) {
+      alert('Debe seleccionar mínimo 100 oraciones.');
+    } else if (finish) {
+      setShowResult(true);
+      alert('Tu eneatipo es: ' + eneatipo + ' y tu ala: ' + ala);
+    }
+  }, [finish, formState.values, ala])
+
+
+  const handleNext = (e) => {
+    e.preventDefault()
     if (step === totalSteps) return false;
     setStep(step + 1);
   }
 
-  const handleBack = () => {
+  const handleBack = (e) => {
+    e.preventDefault()
     if (step === 1) return false;
     setStep(step - 1);
   }
 
+  const handleResult = (e) => {
+    e.preventDefault()
 
-  const handleResult = () => {
-    alert('Resultados');
+    if (Object.keys(formState.values) < 1) return false;
+
+    var array = [];
+
+    Object.keys(formState.values).map((key, index) => {
+      array.push(formState.values[key]);
+    })
+
+    var repetidos = {};
+
+    array.forEach(function (numero) {
+      repetidos[numero] = (repetidos[numero] || 0) + 1;
+    });
+
+    console.log(repetidos);
+    setDesglose(repetidos);
+    analize(repetidos);
+    setFinish(true);
   }
+
+  const analize = (data) => {
+    var resultsEneatipos = [];
+
+    Object.keys(data).map((key) => {
+      resultsEneatipos.push(data[key]);
+      //console.log(data[key]);
+    })
+
+    resultsEneatipos.sort(function (a, b) {
+      return a - b;
+    });
+
+    const eneatipoTmp = determineEneatipoFromValue(data, resultsEneatipos[resultsEneatipos.length - 1]);
+    setEneatipo(eneatipoTmp);
+    const alas = determineAlasFromEneatipo(parseInt(eneatipoTmp));
+
+    if (data[alas[0]] > data[alas[1]]) {
+      setAla(alas[0]);
+    } else if (data[alas[0]] < data[alas[1]]) {
+      setAla(alas[1]);
+    } else if (data[alas[0]] == data[alas[1]]) {
+      setAla('No definido');
+    }
+
+
+  }
+
+  const determineEneatipoFromValue = (object, value) => {
+    return Object.entries(object).find(i => i[1] == value)[0];
+  }
+
+  const isChecked = (keyCompare) => {
+    return Object.entries(formState.values).find(i => i[0] == keyCompare);
+  }
+
+  const determineAlasFromEneatipo = (eneatipo) => {
+    if (eneatipo == 1) return [9, 2];
+    if (eneatipo == 9) return [8, 1];
+    return [eneatipo - 1, eneatipo + 1];
+  }
+
+  const stractSelectField = (field, value, files, name) => {
+    alert(name);
+    if (isChecked(name)) {
+      alert('Ya estaba');
+      var temp = formState.values;
+      delete temp.name;
+      setFormState(formState => ({
+        values: { temp }
+      }));
+    } else {
+      alert('No estaba');
+    }
+    console.log(temp);
+    return value;
+  }
+
+  const handleChange = event => {
+    event.persist();
+
+    setFormState(formState => ({
+      ...formState,
+      values: {
+        ...formState.values,
+        [event.target.name]:
+          stractSelectField(event.target.type, event.target.value, event.target.files, event.target.name)
+      }
+    }));
+  };
+
 
   return (
     <div>
-      <Navbar1 title="Test Eneagrama" />
+      <Navbar1 title="Test Eneagrama" counter={Object.keys(formState.values).length} />
       <div className="container">
         <div className="row">
-          <Table className="mt-5">
-            <thead>
-              <tr>
-                <th>
-                  #
-                </th>
-                <th>
-                  Pregunta
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {
-                questions.slice(pageStart, pageEnd).map((q) => (
-                  <>
+          {
+            (showResult) ? (
+              <>
+              </>
+            ) : (
+              <>
+                <Table className="mt-5">
+                  <thead>
                     <tr>
-                      <th scope="row">
-                        <FormGroup check>
-                          <Input
-                            id={q.id}
-                            name="check"
-                            type="checkbox"
-                          />
-                        </FormGroup>
+                      <th>
+                        #
                       </th>
-                      <td>
-                        {q.pregunta}
-                      </td>
+                      <th>
+                        Pregunta
+                      </th>
                     </tr>
-                  </>
-                ))
-              }
-            </tbody>
-          </Table >
-          <div className="row">
-            <div className="col-lg-12">
-              {
-                (step === 1) ? (
-                  <>
-                  </>
-                ) : (
-                  <Button color="primary" onClick={handleBack} className="m-2">Anterior</Button>
-                )
-              }
+                  </thead>
+                  <tbody>
+                    {
+                      questions.slice(pageStart, pageEnd).map((q, i) => (
+                        <>
+                          <tr key={i}>
+                            <th scope="row">
+                              <FormGroup check>
+                                <Input
+                                  key={q.id}
+                                  name={q.id}
+                                  value={q.eneatipo}
+                                  type="checkbox"
+                                  onClick={(e) => handleChange(e)}
+                                />
+                              </FormGroup>
+                            </th>
+                            <td>
+                              {q.pregunta}
+                            </td>
+                          </tr>
+                        </>
+                      ))
+                    }
+                  </tbody>
+                </Table >
+                <div className="row">
+                  <div className="col-lg-12">
+                    {
+                      (step === 1) ? (
+                        <>
+                        </>
+                      ) : (
+                        <Button color="primary" onClick={(e) => handleBack(e)} className="m-2">Anterior</Button>
+                      )
+                    }
 
-              {
-                (step === totalSteps) ? (
-                  <Button color="success" onClick={handleResult}>Obtener eneatipo</Button>
-                ) : (
-                  <Button color="primary" onClick={handleNext} className="m-2">Siguiente</Button>
-                )
-              }
-            </div>
-          </div>
-        </div>
-      </div>
+                    {
+                      (step === totalSteps) ? (
+                        <Button color="success" onClick={(e) => handleResult(e)}>Obtener eneatipo</Button>
+                      ) : (
+                        <Button color="primary" onClick={(e) => handleNext(e)} className="m-2">Siguiente</Button>
+                      )
+                    }
+                  </div>
+                </div>
+              </>
+            )
+          }
+
+        </div >
+      </div >
     </div >
 
   );

@@ -1,278 +1,1100 @@
 [
-{"type":"header","version":"4.9.7","comment":"Export to JSON plugin for PHPMyAdmin"},
-{"type":"database","name":"qvactuit_eneatipos"},
-{"type":"table","name":"preguntas","database":"qvactuit_eneatipos","data":
-[
-{"id":"1610735782","pregunta":"Me cuesta contenerme y los que me conocen no quieren verme disgustado.","eneatipo":"1"},
-{"id":"1610743173","pregunta":"Me gusta crear una atm\u00f3sfera amigable. Soy un arbitro ecu\u00e1nime porque para mi las dos partes son iguales.","eneatipo":"2"},
-{"id":"1610743203","pregunta":"Me gusta ser emprendedor, me motiva realizar cosas y logra \u00e9xito con ellas.","eneatipo":"5"},
-{"id":"1610743662","pregunta":"Antes de tomar una decisi\u00f3n le doy muchas vueltas en mi cabeza. Pensar que es la correcta es importante.","eneatipo":"8"},
-{"id":"1610743739","pregunta":"Puedo poner en problemas a los otros por ser una persona bastante agresiva.","eneatipo":"1"},
-{"id":"1610743769","pregunta":"Cuando no estoy bien o estoy abrumado con algo, me a\u00edslo. Me encargo de mis propias heridas.","eneatipo":"1"},
-{"id":"1610743790","pregunta":"Casi siempre hago lo que quiero hacer. Es importante para mi ser coherente con lo que siento.","eneatipo":"6"},
-{"id":"1610743808","pregunta":"Es preciso ver las cosas con perspectiva, retrocediendo e incluyendo todo. Dejar algo afuera es casi imperdonable.","eneatipo":"7"},
-{"id":"1610743864","pregunta":"Por lo general act\u00fao siguiendo mi sentido del deber. Ser responsable es importante.","eneatipo":"8"},
-{"id":"1611059234","pregunta":"A veces descuido mi propia salud y bienestar por dedicar atenci\u00f3n y tiempo a otros.","eneatipo":"4"},
-{"id":"1611059254","pregunta":"Se me dificulta participar en conversaciones de temas cotidianos, suelo no tener idea de que me est\u00e1n hablando.","eneatipo":"7"},
-{"id":"1611059275","pregunta":"Es frecuente que me cueste relajarme y estar alegre. Siempre hay cosas reclamando atenci\u00f3n.","eneatipo":"3"},
-{"id":"1611059304","pregunta":"Me gustan la precisi\u00f3n y la profesionalidad. No permito que nadie se interponga en un buen plan de trabajo.","eneatipo":"5"},
-{"id":"1611059323","pregunta":"Estar triste mucho tiempo no debe ser nada bueno.","eneatipo":"9"},
-{"id":"1611059342","pregunta":"Me es dif\u00edcil decir no. No tengo problema en aceptar lo que otro quiere si eso le hace feliz.","eneatipo":"2"},
-{"id":"1611059357","pregunta":"El tiempo pasa volando! Frecuentemente queda demasiado por hacer.","eneatipo":"3"},
-{"id":"1611059388","pregunta":"Mis superiores saben que soy un buen colaborador y que pueden confiar en mi.\t","eneatipo":"8"},
-{"id":"1611059407","pregunta":"Soy muy eficaz, sin embargo me da la sensaci\u00f3n que debo ser m\u00e1s perfecto.","eneatipo":"3"},
-{"id":"1611059449","pregunta":"Trato de hacer las cosas de forma que no suponga un gran gasto de mi energ\u00eda. \"El que menos corre...vuela\".","eneatipo":"2"},
-{"id":"1611059468","pregunta":"Por encima de la adversidad, he tenido la resoluci\u00f3n y eficiencia para conseguir mis metas.","eneatipo":"5"},
-{"id":"1611059486","pregunta":"Soy un buen trabajador. \"Camello\" duro hasta conseguir lo que deseo.","eneatipo":"1"},
-{"id":"1611059505","pregunta":"La primera impresi\u00f3n es lo que cuenta.","eneatipo":"5"},
-{"id":"1611059539","pregunta":"Me puedo confiar y termino siendo permisivo conmigo mismo. Puedo volverme adicto a algo que me guste mucho.","eneatipo":"9"},
-{"id":"1611059559","pregunta":"Algunas veces las personas se enfadan conmigo, creo que es por mi calma y lentitud.","eneatipo":"2"},
-{"id":"1611059578","pregunta":"Tengo una gran capacidad para prever los problemas y peligros potenciales.","eneatipo":"8"},
-{"id":"1611059596","pregunta":"Sentirme seguro y con estabilidad es tan importante para mi, que puedo sacrificar mi independencia por ello.","eneatipo":"8"},
-{"id":"1611059618","pregunta":"Me gusta estar siempre haciendo cosas ch\u00e9veres. Independiente de su profundidad.","eneatipo":"9"},
-{"id":"1611059642","pregunta":"Muchas veces siento la sobrecarga que implica la dependencia que otros tiene de mi.","eneatipo":"4"},
-{"id":"1611059655","pregunta":"Que bueno es tener tiempo para no hacer nada. Es vital en mi agenda.","eneatipo":"2"},
-{"id":"1611059677","pregunta":"La gente sabe que puede confiar en m\u00ed, saben que soy justo y hago lo que es correcto.","eneatipo":"3"},
-{"id":"1611059941","pregunta":"Me gusta que los dem\u00e1s me veas fuerte y l\u00edder. Seguro me ven como una persona m\u00e1s dura de lo que realmente soy.","eneatipo":"1"},
-{"id":"1611059966","pregunta":"Tiendo a dar poco de mi a los dem\u00e1s: Poco tiempo, pocas cosas, poco dinero, poca compa\u00f1\u00eda. Algunos dicen que es taca\u00f1er\u00eda.","eneatipo":"7"},
-{"id":"1611059995","pregunta":"Tengo una voluntad de \"hierro\". Hay pocas cosas (o ninguna) que me hagan renunciar o echarme hacia atr\u00e1s.","eneatipo":"1"},
-{"id":"1611060020","pregunta":"Me siento orgulloso de mi capacidad par ser flexible y encontrar soluciones cuando necesito que algo funcione.","eneatipo":"5"},
-{"id":"1611060035","pregunta":"Me enoja que los dem\u00e1s no me escuchen cuando tengo algo para decirles, les ir\u00eda mejor si lo hicieran.","eneatipo":"3"},
-{"id":"1611060075","pregunta":"El usual deseo de hacer mi voluntad y atender mis necesidades personales ha tra\u00eddo conflictos en mis relaciones.","eneatipo":"6"},
-{"id":"1611060089","pregunta":"Soy objetivo y claro. Con frecuencia conozco el tema mucho mejor que los otros.","eneatipo":"7"},
-{"id":"1611060107","pregunta":"Trabajo en parecer natural.","eneatipo":"6"},
-{"id":"1611060123","pregunta":"Es dif\u00edcil para m\u00ed expresar, alcanzar y pedir lo que necesito.","eneatipo":"7"},
-{"id":"1611060142","pregunta":"Me gusta gozar con casi todo lo que encuentro. Tiendo a los extremos, todo o nada.","eneatipo":"9"},
-{"id":"1611060168","pregunta":"Me causa tensi\u00f3n que me falta tiempo del d\u00eda para hacer todo lo que propongo. A veces tengo dos citas a la misma hora.","eneatipo":"5"},
-{"id":"1611060182","pregunta":"Escrupuloso yo? No, es s\u00f3lo que todo siempre debe estar aseado.","eneatipo":"3"},
-{"id":"1611060203","pregunta":"Me dicen que soy dram\u00e1tico. Pero la verdad es que pocas personas me comprenden.","eneatipo":"6"},
-{"id":"1611060233","pregunta":"Mi tiempo libre es para compartir, ayudar y mostrar mi afecto a los dem\u00e1s.","eneatipo":"4"},
-{"id":"1611060250","pregunta":"Tengo intensidad y pasi\u00f3n por lo intelectual: Me gusta sintetizar y enlazar ideas diferentes.","eneatipo":"7"},
-{"id":"1611060264","pregunta":"No me aguanto lo que considero injusto. Necesito hacer algo para corregirlo.","eneatipo":"1"},
-{"id":"1611060282","pregunta":"Me parece que el mundo est\u00e1 dividido en bandos. Parte de mi tiempo lo paso pensando en qui\u00e9n puedo confiar.","eneatipo":"8"},
-{"id":"1611060299","pregunta":"Cuando me disgusto es usual que piense de los otros como \"ignorantes\", \"brutos\", \"neandertales\", \"sin profundidad\", etc.","eneatipo":"7"},
-{"id":"1611060315","pregunta":"Mejor si se cuidan los detalles, el orden y la precisi\u00f3n. Eso hago yo.","eneatipo":"3"},
-{"id":"1611060332","pregunta":"Me fastidia tener que exponer mis ideas a personas que considero no l\u00f3gicas.","eneatipo":"7"},
-{"id":"1611060352","pregunta":"S\u00e9 como hacer las cosas. Que se hagan a un lado los que no saben coger la sart\u00e9n por el mango.","eneatipo":"1"},
-{"id":"1611060366","pregunta":"Para mi no es problema tomar decisiones dif\u00edciles que lleven al logro de objetivos, alguien debe hacerlo.","eneatipo":"5"},
-{"id":"1611060381","pregunta":"Me gusta ser prudente para resolver los problemas aunque a veces puedo realizar algo inesperado par resolverlos.","eneatipo":"8"},
-{"id":"1611060396","pregunta":"A veces puedo parecer m\u00e1s interesado y preocupado por alguien de lo que realmente estoy.","eneatipo":"4"},
-{"id":"1611060420","pregunta":"Mi tendencia ha sido ser bastante emotivo y poco disciplinado.","eneatipo":"6"},
-{"id":"1611060442","pregunta":"Me identifica el dicho: \"No hay nada tan urgente que no pueda esperar hasta ma\u00f1ana\".","eneatipo":"2"},
-{"id":"1611060460","pregunta":"El compromiso e inter\u00e9s que pongo en las personas me hace una persona extrovertida e interesante.","eneatipo":"4"},
-{"id":"1611060480","pregunta":"Me gusta sacarle jugo a la vida. Mantengo la agenda ocupada, llena de actividades diversas. \"Disfruta, come y bebe que la vida es breve\".","eneatipo":"9"},
-{"id":"1611060495","pregunta":"No me complico con las cosas. La mayor\u00eda de las personas se preocupan demasiado.","eneatipo":"2"},
-{"id":"1611060511","pregunta":"Con frecuencia mis propias cr\u00edticas y las de los otros dan vueltas en mi cabeza. Alcanzar mis est\u00e1ndares es dif\u00edcil.","eneatipo":"3"},
-{"id":"1611060528","pregunta":"Para algunas personas puedo ser superficial, extrovertido, extralimitado. No me importa mucho lo que piensen.","eneatipo":"9"},
-{"id":"1611060541","pregunta":"No creo ser ni el menos ni el m\u00e1s importante.","eneatipo":"2"},
-{"id":"1611060555","pregunta":"Me preocupa lo que los dem\u00e1s piensen de mi. Me he esforzado para que me admiren.","eneatipo":"5"},
-{"id":"1611060588","pregunta":"Cuando hay un c\u00f3digo o una autoridad establecida, me es dif\u00edcil ir en su contra.\t\t\t\r\n","eneatipo":"8"},
-{"id":"1611060603","pregunta":"Para tomar una decisi\u00f3n importante consulto la opini\u00f3n de las personas en quienes conf\u00edo.\t","eneatipo":"8"},
-{"id":"1611060620","pregunta":"Si no fuese por mi esp\u00edritu competitivo no ser\u00eda una persona tan eficaz.","eneatipo":"5"},
-{"id":"1611060633","pregunta":"Tengo un tono de vos muy suave y frecuentemente me piden que hable m\u00e1s fuerte.","eneatipo":"7"},
-{"id":"1611060655","pregunta":"Adaptarme y conformarme? Por qu\u00e9 tendr\u00eda yo que hacerlo? Que lo haga otro.","eneatipo":"1"},
-{"id":"1611060667","pregunta":"Se me dificulta aceptar y expresar mi lado tierno, suave y agradable. Me enojan las personas debiluchas.","eneatipo":"1"},
-{"id":"1611060681","pregunta":"Prefiero resignarme y quedarme en calma, luchar no me atrae.","eneatipo":"2"},
-{"id":"1611060695","pregunta":"Cuando miro mi vida veo todas esas cosas que he hecho muy bien. Casi nunca me acuerdo de los desaciertos.","eneatipo":"5"},
-{"id":"1611060709","pregunta":"Mis sentimientos son muy profundos y a veces dolorosos. La mayor\u00eda de la gente no tiene esa sensibilidad.","eneatipo":"6"},
-{"id":"1611060722","pregunta":"Para qu\u00e9 molestarse con las cosas de la vida? Me amoldo a la vida tal como es.","eneatipo":"2"},
-{"id":"1611060736","pregunta":"Si hay que trabajar, mi sentido del deber me impide dedicar tiempo a actividades banales y al descanso.","eneatipo":"3"},
-{"id":"1611060748","pregunta":"Cuando de servir se trata, soy activo, dedicado, y pongo esmero y esfuerzo. Es importante que la gente vea mi preocupaci\u00f3n.","eneatipo":"4"},
-{"id":"1611060762","pregunta":"F\u00e1cilmente soy consciente de las contradicciones, y desconf\u00edo de las personas o situaciones que las presentan.","eneatipo":"8"},
-{"id":"1611060775","pregunta":"Me muevo m\u00e1s pronto si recibo est\u00edmulo del exterior.","eneatipo":"2"},
-{"id":"1611060788","pregunta":"Me encanta tener gran cantidad de espacio y tiempo a solas. Es una necesidad.","eneatipo":"7"},
-{"id":"1611060804","pregunta":"Soy leal al grupo que pertenezco. Me comprometo y cumplo con mis responsabilidades.","eneatipo":"8"},
-{"id":"1611060816","pregunta":"Al parecer me preocupo m\u00e1s que otros. No puedo dormir si he hecho algo que considero incorrecto.","eneatipo":"3"},
-{"id":"1611060833","pregunta":"Me va bien organizando, coordinando y terminando lo que hago.","eneatipo":"5"},
-{"id":"1611060845","pregunta":"No me gustan la falta de maneras y la vulgaridad. Me molesta.","eneatipo":"6"},
-{"id":"1611060859","pregunta":"Me he dado cuenta que en ocasiones soy menos suspicaz que la mayor\u00eda respecto a los otros y su motivos.","eneatipo":"9"},
-{"id":"1611060876","pregunta":"Prefiero vivir el presente y ser positivo en cuanto al futuro. Miro el pasado s\u00f3lo para lo bueno.","eneatipo":"9"},
-{"id":"1611060889","pregunta":"Para evitarme problemas y disgusto tiendo a reprimir los sentimientos.","eneatipo":"2"},
-{"id":"1611060902","pregunta":"Puedo tener una buena idea y soluci\u00f3n para las cosas, pero la iniciativa en el hacer se la dejo a los otros.","eneatipo":"7"},
-{"id":"1611060913","pregunta":"El conocimiento es la mejor herramienta. Quedarme a solas con un buen libro me hace inmensamente feliz.","eneatipo":"7"},
-{"id":"1611060927","pregunta":"Me encanta re\u00edr, hablar\u2026disfrutar de todo. En la vida hay pocas cosas que no me gustan.","eneatipo":"9"},
-{"id":"1611060941","pregunta":"Me preocupa el sufrimiento, la p\u00e9rdida y la muerte. La vida puede ser muy dif\u00edcil y dolorosa.","eneatipo":"6"},
-{"id":"1611060955","pregunta":"Mis acciones y las cosas que hago est\u00e1n basadas en mis sentimientos.","eneatipo":"4"},
-{"id":"1611060972","pregunta":"Mejor si me dicen con claridad y precisi\u00f3n lo que hay que hacer y hasta d\u00f3nde.","eneatipo":"8"},
-{"id":"1611060984","pregunta":"En la vida he tenido que ser fuerte para otros, as\u00ed que poco me ocupo de mis sentimientos y miedos.","eneatipo":"1"},
-{"id":"1611060996","pregunta":"Durante casi toda mi vida he cre\u00eddo que lo que est\u00e1 bien, est\u00e1 bien, y lo que est\u00e1 mal, est\u00e1 mal.","eneatipo":"3"},
-{"id":"1611061011","pregunta":"Me siento obligado a ser una persona adecuada y honrada.","eneatipo":"3"},
-{"id":"1611061032","pregunta":"He sido ambicioso y he tenido \u00e9xito en muchos aspectos de la vida. Me encanta creer que hago las cosas como se debe.","eneatipo":"5"},
-{"id":"1611061045","pregunta":"Soy bueno animando a la gente. Es mi segunda\u2026o tercera profesi\u00f3n!","eneatipo":"9"},
-{"id":"1611061059","pregunta":"Me dice que soy una persona f\u00e1cil y sencilla. Casi siempre estoy en calma.","eneatipo":"2"},
-{"id":"1611061074","pregunta":"Los dem\u00e1s me ven como una persona segura y decidida. Pero a veces no estoy tan seguro.","eneatipo":"5"},
-{"id":"1611061086","pregunta":"Los problemas graves se los dejo a resolver a los dem\u00e1s. S\u00f3lo si me toca me hago cargo de ellos.","eneatipo":"9"},
-{"id":"1611061099","pregunta":"Les cumplo a las personas. Soy un buen amigo, les dejo saber todo lo que les quiero.","eneatipo":"4"},
-{"id":"1611061114","pregunta":"Las cosas siempre tienen su lado bueno. Sea lo que sea seguro que es para algo mejor.","eneatipo":"9"},
-{"id":"1611061127","pregunta":"Tener un inconveniente me aterra. Me muevo hasta que se va. Me gusta que los otros me vean contento.","eneatipo":"9"},
-{"id":"1611061138","pregunta":"Me gusta sentirme cercano a las personas. El amor y la amistad son fundamentales en mi vida.","eneatipo":"4"},
-{"id":"1611061150","pregunta":"Me he dado cuenta que f\u00e1cilmente me atacan los miedos. En algunas etapas de mi vida ha sido una lucha casi constante.","eneatipo":"8"},
-{"id":"1611061161","pregunta":"No me gusta bajar la guardia, me preocupa que alguien se aproveche de m\u00ed.","eneatipo":"1"},
-{"id":"1611061175","pregunta":"Para lograr lo que quieres a veces es necesario saltarse algunas normas. Todos lo hacemos. \"El fin justifica los medios.\"","eneatipo":"5"},
-{"id":"1611061190","pregunta":"Seguro, son muchas las personas que dependen de mi ayuda y generosidad.","eneatipo":"4"},
-{"id":"1611061207","pregunta":"Me siento vulnerable aunque los dem\u00e1s me vean tranquilo, original y profundo.","eneatipo":"6"},
-{"id":"1611061219","pregunta":"Tengo toques de puritanismo para algunas circunstancias. Mis opiniones sobre esas cosas no cambian f\u00e1cilmente.","eneatipo":"3"},
-{"id":"1611061232","pregunta":"Puedo sentir con facilidad los sentimientos de un grupo, con frecuencia pierdo la frontera entre los suyos y los m\u00edos.","eneatipo":"6"},
-{"id":"1611061247","pregunta":"Cuando se presenta un problema, suelo primero estudiarlo por mi cuenta y luego, si es necesario, lo discuto con los dem\u00e1s.","eneatipo":"7"},
-{"id":"1611061260","pregunta":"Me intimida que la gente me pregunte como me siento. Es una situaci\u00f3n embarazosa.","eneatipo":"7"},
-{"id":"1611061272","pregunta":"Con frecuencia analizo todo lo que pueda pensar que es una amenaza para mi. Tomo medidas si es el caso.","eneatipo":"8"},
-{"id":"1611061285","pregunta":"Con facilidad opaco y suprimo lo que me produce dolor. La vida es para ser feliz.","eneatipo":"9"},
-{"id":"1611061297","pregunta":"Admiro como valores b\u00e1sicos la aceptaci\u00f3n y el mantener la armon\u00eda.\t","eneatipo":"2"},
-{"id":"1611061311","pregunta":"Uno de mis dones es observar y comprender con profundidad lo que me rodea.","eneatipo":"7"},
-{"id":"1611061325","pregunta":"Me doy cuenta que me comunico m\u00e1s con mis amigos de lo que ellos se comunican conmigo.","eneatipo":"4"},
-{"id":"1611061340","pregunta":"Mi familia me ve un tanto raro y demasiado estudioso. La verdad es que me han dicho que debo salir y socializar m\u00e1s.","eneatipo":"7"},
-{"id":"1611061354","pregunta":"Siento que algo empieza a molestarme cuando las cosas no est\u00e1n bien hechas.","eneatipo":"3"},
-{"id":"1611061374","pregunta":"Muchos de mis \u00e9xitos se deben a mi capacidad de lograr una buena impresi\u00f3n.","eneatipo":"5"},
-{"id":"1611061423","pregunta":"Me gusta tener claro hacia donde voy, cada uno crea su vida y la m\u00eda no es para fracasar.","eneatipo":"5"},
-{"id":"1611061439","pregunta":"Me gusta canalizar mis emociones a trav\u00e9s del arte o cualquier actividad art\u00edstica. Creo a trav\u00e9s de ellas.","eneatipo":"6"},
-{"id":"1611061454","pregunta":"Tiendo a condenar poco a las personas. No me gustan los juicios fuertes.","eneatipo":"2"},
-{"id":"1611061472","pregunta":"Soy propenso a encerrarme en m\u00ed mismo, como en un caparaz\u00f3n lleno de nostalgia y a veces melancol\u00eda.","eneatipo":"6"},
-{"id":"1611061484","pregunta":"Me es dif\u00edcil dejar que las situaciones sigan su propio curso. Alguna medida hay que tomar!","eneatipo":"1"},
-{"id":"1611061498","pregunta":"Bueno, si\u2026 puedo ser posesivo con mis seres queridos.","eneatipo":"4"},
-{"id":"1611061517","pregunta":"B\u00e1sicamente soy: Responsable, moderado y trabajador.","eneatipo":"8"},
-{"id":"1611061608","pregunta":"Me gusta dedicarme a los dem\u00e1s. Soy cari\u00f1oso y parte de mi tiempo es para aliviar las preocupaciones de otros.","eneatipo":"4"},
-{"id":"1611061626","pregunta":"Si hay que elegir entre nuevo o conocido, me quedo con lo nuevo. Lo mismo por mucho tiempo me puede aburrir.","eneatipo":"9"},
-{"id":"1611061638","pregunta":"Tengo la obligaci\u00f3n de decirle a la gente cuando est\u00e1 equivocada. Consentir ridiculeces o pereza est\u00e1 fuera de discusi\u00f3n.","eneatipo":"3"},
-{"id":"1611061650","pregunta":"Generalmente soy tradicional en mis valores. Admiro la coherencia moral.","eneatipo":"2"},
-{"id":"1611061669","pregunta":"Me gusta cuidar a los dem\u00e1s. Alg\u00fan d\u00eda ellos cuidaran de m\u00ed.","eneatipo":"4"},
-{"id":"1611061681","pregunta":"Soy de los que hablan y cuentan cuentos. Es genial contar relatos.","eneatipo":"9"},
-{"id":"1611061693","pregunta":"Me identifico con las personas que se enfrentan contra todo lo que est\u00e1 mal.","eneatipo":"3"},
-{"id":"1611061708","pregunta":"Todas las cosas simb\u00f3licas me atraen mucho.","eneatipo":"6"},
-{"id":"1611061721","pregunta":"Me parece que el fin de una relaci\u00f3n me lleva y hunde a lugares inesperados e intensos. Seguro me afecta m\u00e1s que a los dem\u00e1s.","eneatipo":"6"},
-{"id":"1611061733","pregunta":"Tengo un lado contemplativo, me gusta estar en armon\u00eda con el mundo.","eneatipo":"2"},
-{"id":"1611061761","pregunta":"A veces siento que los otros abusan de mi buena fe y cordialidad, como si me utilizasen.","eneatipo":"4"},
-{"id":"1611061777","pregunta":"Aunque alguien no me caiga bien, siempre busco ser diplom\u00e1tico. Agradar a los otros trae buenas cosas.","eneatipo":"5"},
-{"id":"1611061790","pregunta":"Tengo la sensaci\u00f3n de que debo defenderme contantemente, a m\u00ed o a mi posici\u00f3n.","eneatipo":"8"},
-{"id":"1611061803","pregunta":"F\u00e1cilmente paso de una cosa a otra. No es usual que profundice en un solo tema.","eneatipo":"9"},
-{"id":"1611061823","pregunta":"Me considero valeroso y apreciable. He logrado cosas remarcables en mi vida.","eneatipo":"5"},
-{"id":"1611061836","pregunta":"Si no estoy en movimiento puedo aburrirme y hasta dormirme.","eneatipo":"1"},
-{"id":"1611061852","pregunta":"Normalmente vivo lleno de dudas sobre m\u00ed mismo. A\u00fan cuando haya logrado buenas cosas en la vida.","eneatipo":"8"},
-{"id":"1611061866","pregunta":"Como me proyecto a la gente es importante. Me gustan las evaluaciones que muestran c\u00f3mo me desenvuelvo.","eneatipo":"5"},
-{"id":"1611061880","pregunta":"Prefiero observar a los dem\u00e1s, en lugar de involucrarme en la acci\u00f3n.","eneatipo":"7"},
-{"id":"1611061893","pregunta":"La vida tiene montones de d\u00edas maravillosos, aunque hay algunos que resultan insoportables.","eneatipo":"9"},
-{"id":"1611061906","pregunta":"Es m\u00e1s eficiente si trabajo solo, que en equipo. En m\u00e1s corto tiempo saldr\u00e9 con la respuesta adecuada.","eneatipo":"7"},
-{"id":"1611061924","pregunta":"Mi infancia: una etapa feliz. Para que recordar malos momentos?","eneatipo":"9"},
-{"id":"1611061939","pregunta":"Para m\u00ed, dedicarme a las relaciones interpersonales es m\u00e1s importante que la consecuci\u00f3n de resultados.","eneatipo":"4"},
-{"id":"1611061954","pregunta":"Las sorpresas emocionales y las actividades no programadas me producen malestar.","eneatipo":"7"},
-{"id":"1611061969","pregunta":"Me gusta brillar y ser el mejor. Sin embargo me preocupa que a las personas no les guste como soy.","eneatipo":"5"},
-{"id":"1611061982","pregunta":"Con frecuencia me pasa que algunas personas o cosas se parecen mucho entre s\u00ed. Veo poca diferencia.","eneatipo":"2"},
-{"id":"1611061995","pregunta":"A\u00fan entre mucha gente puedo ser muy distante. A veces me acusan de solitario.","eneatipo":"7"},
-{"id":"1611062006","pregunta":"Actuar correctamente es parte de mi c\u00f3digo personal. Me gusta tener la conciencia tranquila.","eneatipo":"3"},
-{"id":"1611062020","pregunta":"Es m\u00e1s sencillo vivir apartado y solo, as\u00ed nadie me pregunta que hago o pienso.","eneatipo":"7"},
-{"id":"1611062033","pregunta":"Cuando quiero comenzar a hacer algo me lleva bastante tiempo empezar y ejecutar.","eneatipo":"7"},
-{"id":"1611062045","pregunta":"Ser\u00eda genial que los dem\u00e1s tuviesen una mejor actitud y disposici\u00f3n respecto a todo.","eneatipo":"9"},
-{"id":"1611062057","pregunta":"Me parece que es poca la gente que aprecia la aut\u00e9ntica belleza de la vida.","eneatipo":"6"},
-{"id":"1611062069","pregunta":"La gente est\u00e1 como est\u00e1 porque quiere. Cada cual se crea su propio problema.","eneatipo":"1"},
-{"id":"1611062082","pregunta":"Me importan mucho las situaciones emocionales y le deseo buenas cosas a las personas.","eneatipo":"4"},
-{"id":"1611062092","pregunta":"Tengo tendencia a perder autoestima si no logro conservar mi paz y la del entorno.","eneatipo":"2"},
-{"id":"1611062105","pregunta":"Reacciono a las situaciones donde me siento inseguro, poni\u00e9ndome a la defensiva y cerr\u00e1ndome con terquedad.","eneatipo":"8"},
-{"id":"1611062116","pregunta":"En general, no es com\u00fan que me sobre excite por las cosas.","eneatipo":"2"},
-{"id":"1611062128","pregunta":"Soy muy callado. No hablo de mis ideas porque la mayor\u00eda de las personas no las comprende.","eneatipo":"7"},
-{"id":"1611062142","pregunta":"Mi estado frecuente es estar contento y en buena onda. Sin embargo cuando me enfado puedo ser muy cr\u00edtico.","eneatipo":"9"},
-{"id":"1611062156","pregunta":"Para mi es muy importante proyectar seguridad, aunque me aterre fracasar.","eneatipo":"5"},
-{"id":"1611062169","pregunta":"Muchos de mis intereses se han quedado en el papel porque he preferido sentirme seguro que aventurarme a desarrollarlos.","eneatipo":"8"},
-{"id":"1611062184","pregunta":"Soy bueno manteniendo lo que quiero, tengo claro como quiero las cosas y como las consigo.","eneatipo":"1"},
-{"id":"1611062196","pregunta":"Los recuerdos de mi pasado vuelven continuamente a mi, casi siempre con nostalgia.","eneatipo":"6"},
-{"id":"1611062209","pregunta":"A mi nadie me arrincona. Si es necesario se baja algunas cabezas.","eneatipo":"1"},
-{"id":"1611062225","pregunta":"Se me dificultan los compromisos a largo plazo. Me puedo sentir ansioso y aterrorizado de estar en lo mismo.","eneatipo":"9"},
-{"id":"1611062238","pregunta":"Frecuentemente me distraigo con facilidad, hay muchas cosas en las que se me dificulta centrar mi atenci\u00f3n.","eneatipo":"2"},
-{"id":"1611062252","pregunta":"La gente opina que tengo un gran sentido del humor y un esp\u00edritu positivo.","eneatipo":"9"},
-{"id":"1611062267","pregunta":"A veces entro en conflictos por el deseo de ayudar a la gente.","eneatipo":"4"},
-{"id":"1611062281","pregunta":"Cuando estoy haciendo algo, no me gusta que me corrijan o digan que est\u00e1 mal.","eneatipo":"5"},
-{"id":"1611062293","pregunta":"Me puedo frustrar cuando tengo la sensaci\u00f3n de que ni yo ni los dem\u00e1s somos como deber\u00edamos.","eneatipo":"3"},
-{"id":"1611062307","pregunta":"Constantemente paso por diferentes estados: puedo estar muy feliz y emocionado o sentirme herido y triste.","eneatipo":"6"},
-{"id":"1611062321","pregunta":"No me gusta imponerme a los dem\u00e1s. A veces esto me trae problemas.","eneatipo":"2"},
-{"id":"1611062336","pregunta":"Es parte de mi naturaleza ser reservado y cauto. Ser previsivo es una de mis mejores habilidades.","eneatipo":"7"},
-{"id":"1611062366","pregunta":"Utilizar mi tiempo de forma responsable es importante y necesario.","eneatipo":"3"},
-{"id":"1611062378","pregunta":"Me parece que soy una persona muy tratable y amigable.","eneatipo":"2"},
-{"id":"1611062388","pregunta":"Me gusta expresar mis emociones. Me agrada abrazar y mostrar aprecio.","eneatipo":"4"},
-{"id":"1611062400","pregunta":"Cuando quiero a las personas las considero \"mi gente\" y siento la necesidad de protegerles y cuidar de sus intereses.","eneatipo":"1"},
-{"id":"1611062420","pregunta":"Tiendo a gastar m\u00e1s dinero del que probablemente deber\u00eda. La mayor\u00eda de las veces no encuentro raz\u00f3n para no permit\u00edrmelo.","eneatipo":"9"},
-{"id":"1611062435","pregunta":"Frecuentemente los otros no entienden lo que siento. Unas veces es doloroso y otras me enfado.","eneatipo":"6"},
-{"id":"1611062448","pregunta":"Me gusta sentir y saber que la gente me necesita. Me despreocupa como me devuelvan los favores que hago.","eneatipo":"4"},
-{"id":"1611062463","pregunta":"A menudo muestro un rostro sonriente aunque por dentro me siento frustrado y triste.","eneatipo":"6"},
-{"id":"1611062476","pregunta":"Pienso y act\u00fao por el bien de los otros, aunque a veces me toque imponerles mis ideas.","eneatipo":"4"},
-{"id":"1611062488","pregunta":"F\u00e1cilmente puedo ver los puntos d\u00e9biles de los dem\u00e1s y no dudo en atacar ah\u00ed si me provocan.","eneatipo":"1"},
-{"id":"1611062504","pregunta":"Los lugares que habito son muy importantes para mi. Especialmente \"mi espacio\".","eneatipo":"6"},
-{"id":"1611062521","pregunta":"Tomar una decisi\u00f3n importante me toma tiempo, porque me gusta explorar todas las opciones antes de decidir.","eneatipo":"8"},
-{"id":"1611062532","pregunta":"El riesgo y la aventura son parte de mis excesos. Vivir el d\u00eda a d\u00eda con todo lo bueno es esencial para mi.","eneatipo":"9"},
-{"id":"1611062547","pregunta":"Es mejor estar en la jugada que ser espectador. Me gusta involucrarme en los procesos.","eneatipo":"5"},
-{"id":"1611062558","pregunta":"En general soy abierto e ingenuo. Me parece que la mayor\u00eda de los problemas no son tan graves.\t","eneatipo":"2"},
-{"id":"1611062571","pregunta":"Soy una persona especial, de veras especial.","eneatipo":"6"},
-{"id":"1611062586","pregunta":"Una forma acertada de ver el mundo est\u00e1 en t\u00e9rminos de correcto o equivocado, bueno o malo.","eneatipo":"3"},
-{"id":"1611062600","pregunta":"Hay temas, como la introspecci\u00f3n y autoan\u00e1lisis, de los que casi no me ocupo.","eneatipo":"1"},
-{"id":"1611062615","pregunta":"Cuando alguien est\u00e1 en apuros salgo al rescate. Soy muy atento con las personas.","eneatipo":"4"},
-{"id":"1611062635","pregunta":"Me encanta estar \"c\u00f3modo\", en todo el sentido de la palabra.","eneatipo":"2"},
-{"id":"1611062651","pregunta":"Tengo ojo de \u00e1guila, me doy cuenta enseguida si algo no funciona o est\u00e1 fuera de lugar.","eneatipo":"3"},
-{"id":"1611062666","pregunta":"Me gusta hacer las cosas bien: con creatividad, elegancia y \"clase\".","eneatipo":"6"},
-{"id":"1611062681","pregunta":"Cuando me presentan a alguien soy poco cohibido, me muestro entretenido y abierto.","eneatipo":"9"},
-{"id":"1611062694","pregunta":"No me gustan las personas de car\u00e1cter d\u00e9bil, soy directo y me gusta que las personas sepan en que lugar est\u00e1n conmigo.","eneatipo":"1"},
-{"id":"1611062705","pregunta":"Me resigno ante la adversidad. Los problemas pasan con el tiempo.","eneatipo":"2"},
-{"id":"1611062718","pregunta":"He pasado por muchas etapas. Mi estilo de vida ha cambiado varias veces.","eneatipo":"5"},
-{"id":"1611062732","pregunta":"Pocas veces he sido muy expresivo en mis emociones. Soy curioso y deseo conocer en profundidad.","eneatipo":"7"},
-{"id":"1611062747","pregunta":"No es nada raro que la gente se me acerque buscando que las aconseje y conforte.","eneatipo":"4"},
-{"id":"1611062758","pregunta":"Con alguna frecuencia me pienso como si fuese un h\u00e9roe que est\u00e1 resolviendo la actividad que estoy haciendo.","eneatipo":"8"},
-{"id":"1611062796","pregunta":"Por lo general no tomo en cuenta el parecer de los dem\u00e1s. Nadie decide por m\u00ed.","eneatipo":"1"},
-{"id":"1611062833","pregunta":"En ocasiones me confronta pensar si tengo suficiente valor para hacer lo que hay que hacer.","eneatipo":"8"},
-{"id":"1611062847","pregunta":"No tengo dificultad en expresar mi insatisfacci\u00f3n.","eneatipo":"1"},
-{"id":"1611062858","pregunta":"Usualmente me esmero mucho en corregir mis fallas.","eneatipo":"3"},
-{"id":"1611062872","pregunta":"Con cierta frecuencia me encuentro siendo demasiado \u00edntimo y personal.","eneatipo":"4"},
-{"id":"1611062885","pregunta":"A veces me enfado tanto con alguien que no puedo estar cerca ni hablarle de lo que ,e disgusta. Es doloroso pero incontrolable.","eneatipo":"6"},
-{"id":"1611062900","pregunta":"Cuando me presionan y no me gusta, me evado y huyo. Mejor estar s\u00f3lo.","eneatipo":"7"},
-{"id":"1611062921","pregunta":"Mi vida parece una obra de teatro: Fantaseo como si estuviese en escena y de hecho han pasado cosas que s\u00f3lo pasan en el cine.","eneatipo":"6"},
-{"id":"1611062935","pregunta":"Pienso regularmente en las pr\u00e1cticas y procedimientos necesarios para que las cosas se den a futuro.","eneatipo":"8"},
-{"id":"1611062947","pregunta":"He tenido bastantes retos dif\u00edciles y de riesgo y he salido victorioso de ellos. Puedo con lo que me pongan!","eneatipo":"1"},
-{"id":"1611062958","pregunta":"Quisiera estar seguro antes de actuar. Por eso me saca de quicio mi constante indecisi\u00f3n.","eneatipo":"8"},
-{"id":"1611062970","pregunta":"Con frecuencia me molesta que las cosas no salgan como deber\u00edan salir.","eneatipo":"3"},
-{"id":"1611062987","pregunta":"Me atraen las experiencias que provocan sensaciones intensas y profundas.","eneatipo":"6"},
-{"id":"1611063002","pregunta":"F\u00e1cilmente me identifico con mi profesi\u00f3n y trabajo. Eso soy, no?","eneatipo":"5"},
-{"id":"1611063013","pregunta":"Salir a un lugar tranquilo y estar en la naturaleza me quita mi permanente tensi\u00f3n.","eneatipo":"3"},
-{"id":"1611063028","pregunta":"Hay muchas cosas que no merecen del enfado y no me gusta que me perturben.","eneatipo":"2"},
-{"id":"1611063040","pregunta":"Me siento bien por ser una persona generosa. Tengo empat\u00eda con la gente.","eneatipo":"4"},
-{"id":"1611063053","pregunta":"Suelo ser el \"alma de la fiesta\". No hay reuniones aburridas conmigo.","eneatipo":"9"},
-{"id":"1611063065","pregunta":"Es una obligaci\u00f3n ayudar a otras personas, todo por su bien\u2026les guste o no.","eneatipo":"4"},
-{"id":"1611063079","pregunta":"No me asusta enfrentarme a otros. Si quieren pelea aqu\u00ed estoy.","eneatipo":"1"},
-{"id":"1611063115","pregunta":"He sido una persona que piensa en las consecuencias que pueden tener las ideas en la pr\u00e1ctica. Es bueno ser realista.","eneatipo":"8"},
-{"id":"1611063128","pregunta":"Me molesta gastar en forma no adecuada el dinero, malgastarlo no me parece, soy prudente con su uso.","eneatipo":"3"},
-{"id":"1611063141","pregunta":"Estoy de acuerdo con la expresi\u00f3n: \"Si algo es bueno, m\u00e1s es mejor\".","eneatipo":"9"},
-{"id":"1611063152","pregunta":"Me gusta seguir el camino de menor resistencia. No tiene sentido complicarse.","eneatipo":"2"},
-{"id":"1611063168","pregunta":"No entiendo la necesidad y me disgusta que me pongan l\u00edmites.","eneatipo":"4"},
-{"id":"1611063183","pregunta":"Las apariencias son importantes. La imagen que le das al mundo dice mucho.","eneatipo":"5"},
-{"id":"1611063203","pregunta":"Me entristece decepcionar a alguien por no haber sido lo suficientemente proactivo en algo importante.","eneatipo":"8"},
-{"id":"1611063236","pregunta":"Me cuestiono sobre si podr\u00e9 terminar con algunas tareas, despu\u00e9s de alg\u00fan progreso me estreso mucho.","eneatipo":"6"},
-{"id":"1611063249","pregunta":"Disfruto ejercer en un puesto de poder. Las personas ven en mi liderazgo y decisi\u00f3n.","eneatipo":"1"},
-{"id":"1611063262","pregunta":"Siempre es bueno mejorarme a mi mismo y todo lo que hago\u2026es una obligaci\u00f3n humana!","eneatipo":"3"},
-{"id":"1611063277","pregunta":"Es importante para mi el buen gusto, la delicadeza de acci\u00f3n y la cordialidad.","eneatipo":"6"},
-{"id":"1611063301","pregunta":"Me produce especial alegr\u00eda recibir y atender en casa a mis amigos y familiares.","eneatipo":"4"},
-{"id":"1611063317","pregunta":"En lo posible, prefiero no tener que depender de los dem\u00e1s.","eneatipo":"7"},
-{"id":"1611063341","pregunta":"Necesidades? Yo pocas\u2026 los dem\u00e1s si que tienen!","eneatipo":"4"},
-{"id":"1611063355","pregunta":"Tengo un sentido del humor que las personas no comprenden. La verdad es que muchas veces me enredo con lo que quiero decir.","eneatipo":"8"},
-{"id":"1611063366","pregunta":"Me considero una persona estable. Pocas veces me enfado. Cuando tengo rabia exploto y luego olvido el asunto.","eneatipo":"2"},
-{"id":"1611063381","pregunta":"Tengo la capacidad de concentrarme profundamente, tal vez por eso a veces me dicen que soy muy individualista.","eneatipo":"7"},
-{"id":"1611063397","pregunta":"Se necesita emplear el tiempo para hacer buenas cosas. Me disgusta que me hagan perder el m\u00edo.","eneatipo":"5"},
-{"id":"1611063415","pregunta":"Es todo un orgullo saber que mantengo con firmeza mis puntos de vista, vivo congruentemente con ellos.","eneatipo":"3"},
-{"id":"1611063438","pregunta":"Guardo mis sentimientos para m\u00ed. Sobre todo cuando me tratan de extra\u00f1o o nerd.","eneatipo":"7"},
-{"id":"1611063453","pregunta":"Es usual que me enfade conmigo mismo por no hacer bien o mejor las cosas.","eneatipo":"3"},
-{"id":"1611063470","pregunta":"Cuando siento que son demasiadas las demandas de los dem\u00e1s, evito entrar en relaciones m\u00e1s serias con ellos.","eneatipo":"5"},
-{"id":"1611063481","pregunta":"Primero hay que actuar, los sentimientos para despu\u00e9s, si hay tiempo.","eneatipo":"1"},
-{"id":"1611063497","pregunta":"Soy muy h\u00e1bil para describir y hablar sobre los sentimientos y estados internos del hombre y la naturaleza.","eneatipo":"6"},
-{"id":"1611063511","pregunta":"Me pongo irascible y tenso si estoy inc\u00f3modo con alguna situaci\u00f3n o siento que estoy bajo presi\u00f3n.","eneatipo":"8"},
-{"id":"1611063524","pregunta":"Me gusta ser juguet\u00f3n, a veces algo infantil. Es parte de pasarlo bueno.","eneatipo":"9"},
-{"id":"1611063539","pregunta":"Normalmente he sido una persona muy exigente. Bajo mi mando todo marcha bien.","eneatipo":"1"},
-{"id":"1611063557","pregunta":"La mayor\u00eda de mis problemas los resuelvo pensando. S\u00f3lo requieren de ideas simples.","eneatipo":"7"},
-{"id":"1611063571","pregunta":"Me preocupa que me vean como una persona ego\u00edsta. Intento ser generoso.","eneatipo":"4"},
-{"id":"1611063584","pregunta":"Mi mente se eleva con bastante facilidad. Me evado y permanezco en mi mundo.","eneatipo":"6"},
-{"id":"1611063598","pregunta":"Un defecto al final de un buen trabajo, arruina el conjunto. Puedo obsesionarme con hacer muy bien las cosas.","eneatipo":"3"},
-{"id":"1611063614","pregunta":"Siento la necesidad de lograr grandes \u00e9xitos y ser eficiente.","eneatipo":"5"},
-{"id":"1611063633","pregunta":"Puedo vivir con pocas comodidades. Suelo recoger y acumular elementos que pueda necesitar alg\u00fan d\u00eda.","eneatipo":"7"},
-{"id":"1611063645","pregunta":"Soy juicioso y suelo seguir las normas, sin embargo hay momentos en los que me rebelo.","eneatipo":"8"},
-{"id":"1611063657","pregunta":"S\u00e9 de muchas cosas, el inter\u00e9s global que tengo es una de mis buenas cualidades. Me ayuda a ser pr\u00e1ctico.","eneatipo":"9"},
-{"id":"1611063673","pregunta":"Si es necesario quito importancia a las dificultades para que los otros se tranquilicen.","eneatipo":"2"},
-{"id":"1611063685","pregunta":"Sin leyes es complejo convivir. Me disgusta cuando alguien rompe la ley y se sale con la suya.","eneatipo":"8"},
-{"id":"1611063699","pregunta":"Identifico r\u00e1pidamente quien tiene el poder en el grupo, y as\u00ed saber a quien enfrento.","eneatipo":"1"},
-{"id":"1611063711","pregunta":"Tener control es clave para mi: tanta democracia hace da\u00f1o.","eneatipo":"1"},
-{"id":"1611063730","pregunta":"Me gusta trabajar en equipo, ser eficiente y admirado. Soy un buen activo del grupo.","eneatipo":"5"},
-{"id":"1611063743","pregunta":"S\u00e9 que soy una persona organizada y met\u00f3dica. Me ayuda a mantener el control.","eneatipo":"3"}
-]
-}
+    {
+        "type": "header",
+        "version": "4.9.7",
+        "comment": "Export to JSON plugin for PHPMyAdmin"
+    }, {
+        "type": "database",
+        "name": "qvactuit_eneatipos"
+    }, {
+        "type": "table",
+        "name": "preguntas",
+        "database": "qvactuit_eneatipos",
+        "data": [
+            {
+                "id": "1610735782",
+                "pregunta": "Me cuesta contenerme y los que me conocen no quieren verme disgustado.",
+                "eneatipo": "1"
+            },
+            {
+                "id": "1610743173",
+                "pregunta": "Me gusta crear una atm\u00f3sfera amigable. Soy un arbitro ecu\u00e1nime porque para mi las dos partes son iguales.",
+                "eneatipo": "2"
+            },
+            {
+                "id": "1610743203",
+                "pregunta": "Me gusta ser emprendedor, me motiva realizar cosas y logra \u00e9xito con ellas.",
+                "eneatipo": "5"
+            },
+            {
+                "id": "1610743662",
+                "pregunta": "Antes de tomar una decisi\u00f3n le doy muchas vueltas en mi cabeza. Pensar que es la correcta es importante.",
+                "eneatipo": "8"
+            }, {
+                "id": "1610743739",
+                "pregunta": "Puedo poner en problemas a los otros por ser una persona bastante agresiva.",
+                "eneatipo": "1"
+            }, {
+                "id": "1610743769",
+                "pregunta": "Cuando no estoy bien o estoy abrumado con algo, me a\u00edslo. Me encargo de mis propias heridas.",
+                "eneatipo": "1"
+            }, {
+                "id": "1610743790",
+                "pregunta": "Casi siempre hago lo que quiero hacer. Es importante para mi ser coherente con lo que siento.",
+                "eneatipo": "6"
+            }, {
+                "id": "1610743808",
+                "pregunta": "Es preciso ver las cosas con perspectiva, retrocediendo e incluyendo todo. Dejar algo afuera es casi imperdonable.",
+                "eneatipo": "7"
+            }, {
+                "id": "1610743864",
+                "pregunta": "Por lo general act\u00fao siguiendo mi sentido del deber. Ser responsable es importante.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611059234",
+                "pregunta": "A veces descuido mi propia salud y bienestar por dedicar atenci\u00f3n y tiempo a otros.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611059254",
+                "pregunta": "Se me dificulta participar en conversaciones de temas cotidianos, suelo no tener idea de que me est\u00e1n hablando.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611059275",
+                "pregunta": "Es frecuente que me cueste relajarme y estar alegre. Siempre hay cosas reclamando atenci\u00f3n.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611059304",
+                "pregunta": "Me gustan la precisi\u00f3n y la profesionalidad. No permito que nadie se interponga en un buen plan de trabajo.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611059323",
+                "pregunta": "Estar triste mucho tiempo no debe ser nada bueno.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611059342",
+                "pregunta": "Me es dif\u00edcil decir no. No tengo problema en aceptar lo que otro quiere si eso le hace feliz.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611059357",
+                "pregunta": "El tiempo pasa volando! Frecuentemente queda demasiado por hacer.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611059388",
+                "pregunta": "Mis superiores saben que soy un buen colaborador y que pueden confiar en mi.\t",
+                "eneatipo": "8"
+            }, {
+                "id": "1611059407",
+                "pregunta": "Soy muy eficaz, sin embargo me da la sensaci\u00f3n que debo ser m\u00e1s perfecto.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611059449",
+                "pregunta": "Trato de hacer las cosas de forma que no suponga un gran gasto de mi energ\u00eda. \"El que menos corre...vuela\".",
+                "eneatipo": "2"
+            }, {
+                "id": "1611059468",
+                "pregunta": "Por encima de la adversidad, he tenido la resoluci\u00f3n y eficiencia para conseguir mis metas.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611059486",
+                "pregunta": "Soy un buen trabajador. \"Camello\" duro hasta conseguir lo que deseo.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611059505",
+                "pregunta": "La primera impresi\u00f3n es lo que cuenta.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611059539",
+                "pregunta": "Me puedo confiar y termino siendo permisivo conmigo mismo. Puedo volverme adicto a algo que me guste mucho.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611059559",
+                "pregunta": "Algunas veces las personas se enfadan conmigo, creo que es por mi calma y lentitud.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611059578",
+                "pregunta": "Tengo una gran capacidad para prever los problemas y peligros potenciales.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611059596",
+                "pregunta": "Sentirme seguro y con estabilidad es tan importante para mi, que puedo sacrificar mi independencia por ello.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611059618",
+                "pregunta": "Me gusta estar siempre haciendo cosas ch\u00e9veres. Independiente de su profundidad.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611059642",
+                "pregunta": "Muchas veces siento la sobrecarga que implica la dependencia que otros tiene de mi.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611059655",
+                "pregunta": "Que bueno es tener tiempo para no hacer nada. Es vital en mi agenda.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611059677",
+                "pregunta": "La gente sabe que puede confiar en m\u00ed, saben que soy justo y hago lo que es correcto.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611059941",
+                "pregunta": "Me gusta que los dem\u00e1s me veas fuerte y l\u00edder. Seguro me ven como una persona m\u00e1s dura de lo que realmente soy.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611059966",
+                "pregunta": "Tiendo a dar poco de mi a los dem\u00e1s: Poco tiempo, pocas cosas, poco dinero, poca compa\u00f1\u00eda. Algunos dicen que es taca\u00f1er\u00eda.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611059995",
+                "pregunta": "Tengo una voluntad de \"hierro\". Hay pocas cosas (o ninguna) que me hagan renunciar o echarme hacia atr\u00e1s.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611060020",
+                "pregunta": "Me siento orgulloso de mi capacidad par ser flexible y encontrar soluciones cuando necesito que algo funcione.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611060035",
+                "pregunta": "Me enoja que los dem\u00e1s no me escuchen cuando tengo algo para decirles, les ir\u00eda mejor si lo hicieran.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611060075",
+                "pregunta": "El usual deseo de hacer mi voluntad y atender mis necesidades personales ha tra\u00eddo conflictos en mis relaciones.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611060089",
+                "pregunta": "Soy objetivo y claro. Con frecuencia conozco el tema mucho mejor que los otros.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611060107",
+                "pregunta": "Trabajo en parecer natural.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611060123",
+                "pregunta": "Es dif\u00edcil para m\u00ed expresar, alcanzar y pedir lo que necesito.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611060142",
+                "pregunta": "Me gusta gozar con casi todo lo que encuentro. Tiendo a los extremos, todo o nada.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611060168",
+                "pregunta": "Me causa tensi\u00f3n que me falta tiempo del d\u00eda para hacer todo lo que propongo. A veces tengo dos citas a la misma hora.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611060182",
+                "pregunta": "Escrupuloso yo? No, es s\u00f3lo que todo siempre debe estar aseado.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611060203",
+                "pregunta": "Me dicen que soy dram\u00e1tico. Pero la verdad es que pocas personas me comprenden.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611060233",
+                "pregunta": "Mi tiempo libre es para compartir, ayudar y mostrar mi afecto a los dem\u00e1s.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611060250",
+                "pregunta": "Tengo intensidad y pasi\u00f3n por lo intelectual: Me gusta sintetizar y enlazar ideas diferentes.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611060264",
+                "pregunta": "No me aguanto lo que considero injusto. Necesito hacer algo para corregirlo.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611060282",
+                "pregunta": "Me parece que el mundo est\u00e1 dividido en bandos. Parte de mi tiempo lo paso pensando en qui\u00e9n puedo confiar.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611060299",
+                "pregunta": "Cuando me disgusto es usual que piense de los otros como \"ignorantes\", \"brutos\", \"neandertales\", \"sin profundidad\", etc.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611060315",
+                "pregunta": "Mejor si se cuidan los detalles, el orden y la precisi\u00f3n. Eso hago yo.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611060332",
+                "pregunta": "Me fastidia tener que exponer mis ideas a personas que considero no l\u00f3gicas.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611060352",
+                "pregunta": "S\u00e9 como hacer las cosas. Que se hagan a un lado los que no saben coger la sart\u00e9n por el mango.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611060366",
+                "pregunta": "Para mi no es problema tomar decisiones dif\u00edciles que lleven al logro de objetivos, alguien debe hacerlo.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611060381",
+                "pregunta": "Me gusta ser prudente para resolver los problemas aunque a veces puedo realizar algo inesperado para resolverlos.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611060396",
+                "pregunta": "A veces puedo parecer m\u00e1s interesado y preocupado por alguien de lo que realmente estoy.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611060420",
+                "pregunta": "Mi tendencia ha sido ser bastante emotivo y poco disciplinado.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611060442",
+                "pregunta": "Me identifica el dicho: \"No hay nada tan urgente que no pueda esperar hasta ma\u00f1ana\".",
+                "eneatipo": "2"
+            }, {
+                "id": "1611060460",
+                "pregunta": "El compromiso e inter\u00e9s que pongo en las personas me hace una persona extrovertida e interesante.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611060480",
+                "pregunta": "Me gusta sacarle jugo a la vida. Mantengo la agenda ocupada, llena de actividades diversas. \"Disfruta, come y bebe que la vida es breve\".",
+                "eneatipo": "9"
+            }, {
+                "id": "1611060495",
+                "pregunta": "No me complico con las cosas. La mayor\u00eda de las personas se preocupan demasiado.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611060511",
+                "pregunta": "Con frecuencia mis propias cr\u00edticas y las de los otros dan vueltas en mi cabeza. Alcanzar mis est\u00e1ndares es dif\u00edcil.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611060528",
+                "pregunta": "Para algunas personas puedo ser superficial, extrovertido, extralimitado. No me importa mucho lo que piensen.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611060541",
+                "pregunta": "No creo ser ni el menos ni el m\u00e1s importante.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611060555",
+                "pregunta": "Me preocupa lo que los dem\u00e1s piensen de mi. Me he esforzado para que me admiren.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611060588",
+                "pregunta": "Cuando hay un c\u00f3digo o una autoridad establecida, me es dif\u00edcil ir en su contra.\t\t\t\r\n",
+                "eneatipo": "8"
+            }, {
+                "id": "1611060603",
+                "pregunta": "Para tomar una decisi\u00f3n importante consulto la opini\u00f3n de las personas en quienes conf\u00edo.\t",
+                "eneatipo": "8"
+            }, {
+                "id": "1611060620",
+                "pregunta": "Si no fuese por mi esp\u00edritu competitivo no ser\u00eda una persona tan eficaz.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611060633",
+                "pregunta": "Tengo un tono de vos muy suave y frecuentemente me piden que hable m\u00e1s fuerte.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611060655",
+                "pregunta": "Adaptarme y conformarme? Por qu\u00e9 tendr\u00eda yo que hacerlo? Que lo haga otro.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611060667",
+                "pregunta": "Se me dificulta aceptar y expresar mi lado tierno, suave y agradable. Me enojan las personas debiluchas.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611060681",
+                "pregunta": "Prefiero resignarme y quedarme en calma, luchar no me atrae.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611060695",
+                "pregunta": "Cuando miro mi vida veo todas esas cosas que he hecho muy bien. Casi nunca me acuerdo de los desaciertos.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611060709",
+                "pregunta": "Mis sentimientos son muy profundos y a veces dolorosos. La mayor\u00eda de la gente no tiene esa sensibilidad.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611060722",
+                "pregunta": "Para qu\u00e9 molestarse con las cosas de la vida? Me amoldo a la vida tal como es.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611060736",
+                "pregunta": "Si hay que trabajar, mi sentido del deber me impide dedicar tiempo a actividades banales y al descanso.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611060748",
+                "pregunta": "Cuando de servir se trata, soy activo, dedicado, y pongo esmero y esfuerzo. Es importante que la gente vea mi preocupaci\u00f3n.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611060762",
+                "pregunta": "F\u00e1cilmente soy consciente de las contradicciones, y desconf\u00edo de las personas o situaciones que las presentan.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611060775",
+                "pregunta": "Me muevo m\u00e1s pronto si recibo est\u00edmulo del exterior.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611060788",
+                "pregunta": "Me encanta tener gran cantidad de espacio y tiempo a solas. Es una necesidad.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611060804",
+                "pregunta": "Soy leal al grupo que pertenezco. Me comprometo y cumplo con mis responsabilidades.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611060816",
+                "pregunta": "Al parecer me preocupo m\u00e1s que otros. No puedo dormir si he hecho algo que considero incorrecto.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611060833",
+                "pregunta": "Me va bien organizando, coordinando y terminando lo que hago.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611060845",
+                "pregunta": "No me gustan la falta de maneras y la vulgaridad. Me molesta.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611060859",
+                "pregunta": "Me he dado cuenta que en ocasiones soy menos suspicaz que la mayor\u00eda respecto a los otros y su motivos.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611060876",
+                "pregunta": "Prefiero vivir el presente y ser positivo en cuanto al futuro. Miro el pasado s\u00f3lo para lo bueno.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611060889",
+                "pregunta": "Para evitarme problemas y disgusto tiendo a reprimir los sentimientos.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611060902",
+                "pregunta": "Puedo tener una buena idea y soluci\u00f3n para las cosas, pero la iniciativa en el hacer se la dejo a los otros.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611060913",
+                "pregunta": "El conocimiento es la mejor herramienta. Quedarme a solas con un buen libro me hace inmensamente feliz.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611060927",
+                "pregunta": "Me encanta re\u00edr, hablar\u2026disfrutar de todo. En la vida hay pocas cosas que no me gustan.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611060941",
+                "pregunta": "Me preocupa el sufrimiento, la p\u00e9rdida y la muerte. La vida puede ser muy dif\u00edcil y dolorosa.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611060955",
+                "pregunta": "Mis acciones y las cosas que hago est\u00e1n basadas en mis sentimientos.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611060972",
+                "pregunta": "Mejor si me dicen con claridad y precisi\u00f3n lo que hay que hacer y hasta d\u00f3nde.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611060984",
+                "pregunta": "En la vida he tenido que ser fuerte para otros, as\u00ed que poco me ocupo de mis sentimientos y miedos.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611060996",
+                "pregunta": "Durante casi toda mi vida he cre\u00eddo que lo que est\u00e1 bien, est\u00e1 bien, y lo que est\u00e1 mal, est\u00e1 mal.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611061011",
+                "pregunta": "Me siento obligado a ser una persona adecuada y honrada.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611061032",
+                "pregunta": "He sido ambicioso y he tenido \u00e9xito en muchos aspectos de la vida. Me encanta creer que hago las cosas como se debe.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611061045",
+                "pregunta": "Soy bueno animando a la gente. Es mi segunda\u2026o tercera profesi\u00f3n!",
+                "eneatipo": "9"
+            }, {
+                "id": "1611061059",
+                "pregunta": "Me dice que soy una persona f\u00e1cil y sencilla. Casi siempre estoy en calma.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611061074",
+                "pregunta": "Los dem\u00e1s me ven como una persona segura y decidida. Pero a veces no estoy tan seguro.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611061086",
+                "pregunta": "Los problemas graves se los dejo a resolver a los dem\u00e1s. S\u00f3lo si me toca me hago cargo de ellos.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611061099",
+                "pregunta": "Les cumplo a las personas. Soy un buen amigo, les dejo saber todo lo que les quiero.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611061114",
+                "pregunta": "Las cosas siempre tienen su lado bueno. Sea lo que sea seguro que es para algo mejor.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611061127",
+                "pregunta": "Tener un inconveniente me aterra. Me muevo hasta que se va. Me gusta que los otros me vean contento.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611061138",
+                "pregunta": "Me gusta sentirme cercano a las personas. El amor y la amistad son fundamentales en mi vida.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611061150",
+                "pregunta": "Me he dado cuenta que f\u00e1cilmente me atacan los miedos. En algunas etapas de mi vida ha sido una lucha casi constante.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611061161",
+                "pregunta": "No me gusta bajar la guardia, me preocupa que alguien se aproveche de m\u00ed.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611061175",
+                "pregunta": "Para lograr lo que quieres a veces es necesario saltarse algunas normas. Todos lo hacemos. \"El fin justifica los medios.\"",
+                "eneatipo": "5"
+            }, {
+                "id": "1611061190",
+                "pregunta": "Seguro, son muchas las personas que dependen de mi ayuda y generosidad.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611061207",
+                "pregunta": "Me siento vulnerable aunque los dem\u00e1s me vean tranquilo, original y profundo.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611061219",
+                "pregunta": "Tengo toques de puritanismo para algunas circunstancias. Mis opiniones sobre esas cosas no cambian f\u00e1cilmente.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611061232",
+                "pregunta": "Puedo sentir con facilidad los sentimientos de un grupo, con frecuencia pierdo la frontera entre los suyos y los m\u00edos.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611061247",
+                "pregunta": "Cuando se presenta un problema, suelo primero estudiarlo por mi cuenta y luego, si es necesario, lo discuto con los dem\u00e1s.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611061260",
+                "pregunta": "Me intimida que la gente me pregunte como me siento. Es una situaci\u00f3n embarazosa.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611061272",
+                "pregunta": "Con frecuencia analizo todo lo que pueda pensar que es una amenaza para mi. Tomo medidas si es el caso.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611061285",
+                "pregunta": "Con facilidad opaco y suprimo lo que me produce dolor. La vida es para ser feliz.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611061297",
+                "pregunta": "Admiro como valores b\u00e1sicos la aceptaci\u00f3n y el mantener la armon\u00eda.\t",
+                "eneatipo": "2"
+            }, {
+                "id": "1611061311",
+                "pregunta": "Uno de mis dones es observar y comprender con profundidad lo que me rodea.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611061325",
+                "pregunta": "Me doy cuenta que me comunico m\u00e1s con mis amigos de lo que ellos se comunican conmigo.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611061340",
+                "pregunta": "Mi familia me ve un tanto raro y demasiado estudioso. La verdad es que me han dicho que debo salir y socializar m\u00e1s.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611061354",
+                "pregunta": "Siento que algo empieza a molestarme cuando las cosas no est\u00e1n bien hechas.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611061374",
+                "pregunta": "Muchos de mis \u00e9xitos se deben a mi capacidad de lograr una buena impresi\u00f3n.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611061423",
+                "pregunta": "Me gusta tener claro hacia donde voy, cada uno crea su vida y la m\u00eda no es para fracasar.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611061439",
+                "pregunta": "Me gusta canalizar mis emociones a trav\u00e9s del arte o cualquier actividad art\u00edstica. Creo a trav\u00e9s de ellas.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611061454",
+                "pregunta": "Tiendo a condenar poco a las personas. No me gustan los juicios fuertes.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611061472",
+                "pregunta": "Soy propenso a encerrarme en m\u00ed mismo, como en un caparaz\u00f3n lleno de nostalgia y a veces melancol\u00eda.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611061484",
+                "pregunta": "Me es dif\u00edcil dejar que las situaciones sigan su propio curso. Alguna medida hay que tomar!",
+                "eneatipo": "1"
+            }, {
+                "id": "1611061498",
+                "pregunta": "Bueno, si\u2026 puedo ser posesivo con mis seres queridos.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611061517",
+                "pregunta": "B\u00e1sicamente soy: Responsable, moderado y trabajador.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611061608",
+                "pregunta": "Me gusta dedicarme a los dem\u00e1s. Soy cari\u00f1oso y parte de mi tiempo es para aliviar las preocupaciones de otros.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611061626",
+                "pregunta": "Si hay que elegir entre nuevo o conocido, me quedo con lo nuevo. Lo mismo por mucho tiempo me puede aburrir.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611061638",
+                "pregunta": "Tengo la obligaci\u00f3n de decirle a la gente cuando est\u00e1 equivocada. Consentir ridiculeces o pereza est\u00e1 fuera de discusi\u00f3n.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611061650",
+                "pregunta": "Generalmente soy tradicional en mis valores. Admiro la coherencia moral.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611061669",
+                "pregunta": "Me gusta cuidar a los dem\u00e1s. Alg\u00fan d\u00eda ellos cuidaran de m\u00ed.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611061681",
+                "pregunta": "Soy de los que hablan y cuentan cuentos. Es genial contar relatos.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611061693",
+                "pregunta": "Me identifico con las personas que se enfrentan contra todo lo que est\u00e1 mal.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611061708",
+                "pregunta": "Todas las cosas simb\u00f3licas me atraen mucho.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611061721",
+                "pregunta": "Me parece que el fin de una relaci\u00f3n me lleva y hunde a lugares inesperados e intensos. Seguro me afecta m\u00e1s que a los dem\u00e1s.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611061733",
+                "pregunta": "Tengo un lado contemplativo, me gusta estar en armon\u00eda con el mundo.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611061761",
+                "pregunta": "A veces siento que los otros abusan de mi buena fe y cordialidad, como si me utilizasen.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611061777",
+                "pregunta": "Aunque alguien no me caiga bien, siempre busco ser diplom\u00e1tico. Agradar a los otros trae buenas cosas.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611061790",
+                "pregunta": "Tengo la sensaci\u00f3n de que debo defenderme contantemente, a m\u00ed o a mi posici\u00f3n.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611061803",
+                "pregunta": "F\u00e1cilmente paso de una cosa a otra. No es usual que profundice en un solo tema.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611061823",
+                "pregunta": "Me considero valeroso y apreciable. He logrado cosas remarcables en mi vida.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611061836",
+                "pregunta": "Si no estoy en movimiento puedo aburrirme y hasta dormirme.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611061852",
+                "pregunta": "Normalmente vivo lleno de dudas sobre m\u00ed mismo. A\u00fan cuando haya logrado buenas cosas en la vida.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611061866",
+                "pregunta": "Como me proyecto a la gente es importante. Me gustan las evaluaciones que muestran c\u00f3mo me desenvuelvo.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611061880",
+                "pregunta": "Prefiero observar a los dem\u00e1s, en lugar de involucrarme en la acci\u00f3n.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611061893",
+                "pregunta": "La vida tiene montones de d\u00edas maravillosos, aunque hay algunos que resultan insoportables.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611061906",
+                "pregunta": "Es m\u00e1s eficiente si trabajo solo, que en equipo. En m\u00e1s corto tiempo saldr\u00e9 con la respuesta adecuada.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611061924",
+                "pregunta": "Mi infancia: una etapa feliz. Para que recordar malos momentos?",
+                "eneatipo": "9"
+            }, {
+                "id": "1611061939",
+                "pregunta": "Para m\u00ed, dedicarme a las relaciones interpersonales es m\u00e1s importante que la consecuci\u00f3n de resultados.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611061954",
+                "pregunta": "Las sorpresas emocionales y las actividades no programadas me producen malestar.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611061969",
+                "pregunta": "Me gusta brillar y ser el mejor. Sin embargo me preocupa que a las personas no les guste como soy.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611061982",
+                "pregunta": "Con frecuencia me pasa que algunas personas o cosas se parecen mucho entre s\u00ed. Veo poca diferencia.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611061995",
+                "pregunta": "A\u00fan entre mucha gente puedo ser muy distante. A veces me acusan de solitario.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611062006",
+                "pregunta": "Actuar correctamente es parte de mi c\u00f3digo personal. Me gusta tener la conciencia tranquila.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611062020",
+                "pregunta": "Es m\u00e1s sencillo vivir apartado y solo, as\u00ed nadie me pregunta que hago o pienso.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611062033",
+                "pregunta": "Cuando quiero comenzar a hacer algo me lleva bastante tiempo empezar y ejecutar.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611062045",
+                "pregunta": "Ser\u00eda genial que los dem\u00e1s tuviesen una mejor actitud y disposici\u00f3n respecto a todo.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611062057",
+                "pregunta": "Me parece que es poca la gente que aprecia la aut\u00e9ntica belleza de la vida.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611062069",
+                "pregunta": "La gente est\u00e1 como est\u00e1 porque quiere. Cada cual se crea su propio problema.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611062082",
+                "pregunta": "Me importan mucho las situaciones emocionales y le deseo buenas cosas a las personas.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611062092",
+                "pregunta": "Tengo tendencia a perder autoestima si no logro conservar mi paz y la del entorno.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611062105",
+                "pregunta": "Reacciono a las situaciones donde me siento inseguro, poni\u00e9ndome a la defensiva y cerr\u00e1ndome con terquedad.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611062116",
+                "pregunta": "En general, no es com\u00fan que me sobre excite por las cosas.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611062128",
+                "pregunta": "Soy muy callado. No hablo de mis ideas porque la mayor\u00eda de las personas no las comprende.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611062142",
+                "pregunta": "Mi estado frecuente es estar contento y en buena onda. Sin embargo cuando me enfado puedo ser muy cr\u00edtico.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611062156",
+                "pregunta": "Para mi es muy importante proyectar seguridad, aunque me aterre fracasar.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611062169",
+                "pregunta": "Muchos de mis intereses se han quedado en el papel porque he preferido sentirme seguro que aventurarme a desarrollarlos.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611062184",
+                "pregunta": "Soy bueno manteniendo lo que quiero, tengo claro como quiero las cosas y como las consigo.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611062196",
+                "pregunta": "Los recuerdos de mi pasado vuelven continuamente a mi, casi siempre con nostalgia.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611062209",
+                "pregunta": "A mi nadie me arrincona. Si es necesario se baja algunas cabezas.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611062225",
+                "pregunta": "Se me dificultan los compromisos a largo plazo. Me puedo sentir ansioso y aterrorizado de estar en lo mismo.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611062238",
+                "pregunta": "Frecuentemente me distraigo con facilidad, hay muchas cosas en las que se me dificulta centrar mi atenci\u00f3n.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611062252",
+                "pregunta": "La gente opina que tengo un gran sentido del humor y un esp\u00edritu positivo.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611062267",
+                "pregunta": "A veces entro en conflictos por el deseo de ayudar a la gente.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611062281",
+                "pregunta": "Cuando estoy haciendo algo, no me gusta que me corrijan o digan que est\u00e1 mal.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611062293",
+                "pregunta": "Me puedo frustrar cuando tengo la sensaci\u00f3n de que ni yo ni los dem\u00e1s somos como deber\u00edamos.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611062307",
+                "pregunta": "Constantemente paso por diferentes estados: puedo estar muy feliz y emocionado o sentirme herido y triste.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611062321",
+                "pregunta": "No me gusta imponerme a los dem\u00e1s. A veces esto me trae problemas.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611062336",
+                "pregunta": "Es parte de mi naturaleza ser reservado y cauto. Ser previsivo es una de mis mejores habilidades.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611062366",
+                "pregunta": "Utilizar mi tiempo de forma responsable es importante y necesario.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611062378",
+                "pregunta": "Me parece que soy una persona muy tratable y amigable.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611062388",
+                "pregunta": "Me gusta expresar mis emociones. Me agrada abrazar y mostrar aprecio.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611062400",
+                "pregunta": "Cuando quiero a las personas las considero \"mi gente\" y siento la necesidad de protegerles y cuidar de sus intereses.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611062420",
+                "pregunta": "Tiendo a gastar m\u00e1s dinero del que probablemente deber\u00eda. La mayor\u00eda de las veces no encuentro raz\u00f3n para no permit\u00edrmelo.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611062435",
+                "pregunta": "Frecuentemente los otros no entienden lo que siento. Unas veces es doloroso y otras me enfado.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611062448",
+                "pregunta": "Me gusta sentir y saber que la gente me necesita. Me despreocupa como me devuelvan los favores que hago.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611062463",
+                "pregunta": "A menudo muestro un rostro sonriente aunque por dentro me siento frustrado y triste.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611062476",
+                "pregunta": "Pienso y act\u00fao por el bien de los otros, aunque a veces me toque imponerles mis ideas.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611062488",
+                "pregunta": "F\u00e1cilmente puedo ver los puntos d\u00e9biles de los dem\u00e1s y no dudo en atacar ah\u00ed si me provocan.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611062504",
+                "pregunta": "Los lugares que habito son muy importantes para mi. Especialmente \"mi espacio\".",
+                "eneatipo": "6"
+            }, {
+                "id": "1611062521",
+                "pregunta": "Tomar una decisi\u00f3n importante me toma tiempo, porque me gusta explorar todas las opciones antes de decidir.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611062532",
+                "pregunta": "El riesgo y la aventura son parte de mis excesos. Vivir el d\u00eda a d\u00eda con todo lo bueno es esencial para mi.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611062547",
+                "pregunta": "Es mejor estar en la jugada que ser espectador. Me gusta involucrarme en los procesos.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611062558",
+                "pregunta": "En general soy abierto e ingenuo. Me parece que la mayor\u00eda de los problemas no son tan graves.\t",
+                "eneatipo": "2"
+            }, {
+                "id": "1611062571",
+                "pregunta": "Soy una persona especial, de veras especial.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611062586",
+                "pregunta": "Una forma acertada de ver el mundo est\u00e1 en t\u00e9rminos de correcto o equivocado, bueno o malo.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611062600",
+                "pregunta": "Hay temas, como la introspecci\u00f3n y autoan\u00e1lisis, de los que casi no me ocupo.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611062615",
+                "pregunta": "Cuando alguien est\u00e1 en apuros salgo al rescate. Soy muy atento con las personas.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611062635",
+                "pregunta": "Me encanta estar \"c\u00f3modo\", en todo el sentido de la palabra.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611062651",
+                "pregunta": "Tengo ojo de \u00e1guila, me doy cuenta enseguida si algo no funciona o est\u00e1 fuera de lugar.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611062666",
+                "pregunta": "Me gusta hacer las cosas bien: con creatividad, elegancia y \"clase\".",
+                "eneatipo": "6"
+            }, {
+                "id": "1611062681",
+                "pregunta": "Cuando me presentan a alguien soy poco cohibido, me muestro entretenido y abierto.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611062694",
+                "pregunta": "No me gustan las personas de car\u00e1cter d\u00e9bil, soy directo y me gusta que las personas sepan en que lugar est\u00e1n conmigo.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611062705",
+                "pregunta": "Me resigno ante la adversidad. Los problemas pasan con el tiempo.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611062718",
+                "pregunta": "He pasado por muchas etapas. Mi estilo de vida ha cambiado varias veces.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611062732",
+                "pregunta": "Pocas veces he sido muy expresivo en mis emociones. Soy curioso y deseo conocer en profundidad.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611062747",
+                "pregunta": "No es nada raro que la gente se me acerque buscando que las aconseje y conforte.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611062758",
+                "pregunta": "Con alguna frecuencia me pienso como si fuese un h\u00e9roe que est\u00e1 resolviendo la actividad que estoy haciendo.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611062796",
+                "pregunta": "Por lo general no tomo en cuenta el parecer de los dem\u00e1s. Nadie decide por m\u00ed.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611062833",
+                "pregunta": "En ocasiones me confronta pensar si tengo suficiente valor para hacer lo que hay que hacer.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611062847",
+                "pregunta": "No tengo dificultad en expresar mi insatisfacci\u00f3n.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611062858",
+                "pregunta": "Usualmente me esmero mucho en corregir mis fallas.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611062872",
+                "pregunta": "Con cierta frecuencia me encuentro siendo demasiado \u00edntimo y personal.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611062885",
+                "pregunta": "A veces me enfado tanto con alguien que no puedo estar cerca ni hablarle de lo que ,e disgusta. Es doloroso pero incontrolable.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611062900",
+                "pregunta": "Cuando me presionan y no me gusta, me evado y huyo. Mejor estar s\u00f3lo.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611062921",
+                "pregunta": "Mi vida parece una obra de teatro: Fantaseo como si estuviese en escena y de hecho han pasado cosas que s\u00f3lo pasan en el cine.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611062935",
+                "pregunta": "Pienso regularmente en las pr\u00e1cticas y procedimientos necesarios para que las cosas se den a futuro.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611062947",
+                "pregunta": "He tenido bastantes retos dif\u00edciles y de riesgo y he salido victorioso de ellos. Puedo con lo que me pongan!",
+                "eneatipo": "1"
+            }, {
+                "id": "1611062958",
+                "pregunta": "Quisiera estar seguro antes de actuar. Por eso me saca de quicio mi constante indecisi\u00f3n.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611062970",
+                "pregunta": "Con frecuencia me molesta que las cosas no salgan como deber\u00edan salir.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611062987",
+                "pregunta": "Me atraen las experiencias que provocan sensaciones intensas y profundas.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611063002",
+                "pregunta": "F\u00e1cilmente me identifico con mi profesi\u00f3n y trabajo. Eso soy, no?",
+                "eneatipo": "5"
+            }, {
+                "id": "1611063013",
+                "pregunta": "Salir a un lugar tranquilo y estar en la naturaleza me quita mi permanente tensi\u00f3n.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611063028",
+                "pregunta": "Hay muchas cosas que no merecen del enfado y no me gusta que me perturben.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611063040",
+                "pregunta": "Me siento bien por ser una persona generosa. Tengo empat\u00eda con la gente.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611063053",
+                "pregunta": "Suelo ser el \"alma de la fiesta\". No hay reuniones aburridas conmigo.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611063065",
+                "pregunta": "Es una obligaci\u00f3n ayudar a otras personas, todo por su bien\u2026les guste o no.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611063079",
+                "pregunta": "No me asusta enfrentarme a otros. Si quieren pelea aqu\u00ed estoy.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611063115",
+                "pregunta": "He sido una persona que piensa en las consecuencias que pueden tener las ideas en la pr\u00e1ctica. Es bueno ser realista.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611063128",
+                "pregunta": "Me molesta gastar en forma no adecuada el dinero, malgastarlo no me parece, soy prudente con su uso.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611063141",
+                "pregunta": "Estoy de acuerdo con la expresi\u00f3n: \"Si algo es bueno, m\u00e1s es mejor\".",
+                "eneatipo": "9"
+            }, {
+                "id": "1611063152",
+                "pregunta": "Me gusta seguir el camino de menor resistencia. No tiene sentido complicarse.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611063168",
+                "pregunta": "No entiendo la necesidad y me disgusta que me pongan l\u00edmites.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611063183",
+                "pregunta": "Las apariencias son importantes. La imagen que le das al mundo dice mucho.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611063203",
+                "pregunta": "Me entristece decepcionar a alguien por no haber sido lo suficientemente proactivo en algo importante.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611063236",
+                "pregunta": "Me cuestiono sobre si podr\u00e9 terminar con algunas tareas, despu\u00e9s de alg\u00fan progreso me estreso mucho.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611063249",
+                "pregunta": "Disfruto ejercer en un puesto de poder. Las personas ven en mi liderazgo y decisi\u00f3n.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611063262",
+                "pregunta": "Siempre es bueno mejorarme a mi mismo y todo lo que hago\u2026es una obligaci\u00f3n humana!",
+                "eneatipo": "3"
+            }, {
+                "id": "1611063277",
+                "pregunta": "Es importante para mi el buen gusto, la delicadeza de acci\u00f3n y la cordialidad.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611063301",
+                "pregunta": "Me produce especial alegr\u00eda recibir y atender en casa a mis amigos y familiares.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611063317",
+                "pregunta": "En lo posible, prefiero no tener que depender de los dem\u00e1s.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611063341",
+                "pregunta": "Necesidades? Yo pocas\u2026 los dem\u00e1s si que tienen!",
+                "eneatipo": "4"
+            }, {
+                "id": "1611063355",
+                "pregunta": "Tengo un sentido del humor que las personas no comprenden. La verdad es que muchas veces me enredo con lo que quiero decir.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611063366",
+                "pregunta": "Me considero una persona estable. Pocas veces me enfado. Cuando tengo rabia exploto y luego olvido el asunto.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611063381",
+                "pregunta": "Tengo la capacidad de concentrarme profundamente, tal vez por eso a veces me dicen que soy muy individualista.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611063397",
+                "pregunta": "Se necesita emplear el tiempo para hacer buenas cosas. Me disgusta que me hagan perder el m\u00edo.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611063415",
+                "pregunta": "Es todo un orgullo saber que mantengo con firmeza mis puntos de vista, vivo congruentemente con ellos.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611063438",
+                "pregunta": "Guardo mis sentimientos para m\u00ed. Sobre todo cuando me tratan de extra\u00f1o o nerd.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611063453",
+                "pregunta": "Es usual que me enfade conmigo mismo por no hacer bien o mejor las cosas.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611063470",
+                "pregunta": "Cuando siento que son demasiadas las demandas de los dem\u00e1s, evito entrar en relaciones m\u00e1s serias con ellos.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611063481",
+                "pregunta": "Primero hay que actuar, los sentimientos para despu\u00e9s, si hay tiempo.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611063497",
+                "pregunta": "Soy muy h\u00e1bil para describir y hablar sobre los sentimientos y estados internos del hombre y la naturaleza.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611063511",
+                "pregunta": "Me pongo irascible y tenso si estoy inc\u00f3modo con alguna situaci\u00f3n o siento que estoy bajo presi\u00f3n.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611063524",
+                "pregunta": "Me gusta ser juguet\u00f3n, a veces algo infantil. Es parte de pasarlo bueno.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611063539",
+                "pregunta": "Normalmente he sido una persona muy exigente. Bajo mi mando todo marcha bien.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611063557",
+                "pregunta": "La mayor\u00eda de mis problemas los resuelvo pensando. S\u00f3lo requieren de ideas simples.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611063571",
+                "pregunta": "Me preocupa que me vean como una persona ego\u00edsta. Intento ser generoso.",
+                "eneatipo": "4"
+            }, {
+                "id": "1611063584",
+                "pregunta": "Mi mente se eleva con bastante facilidad. Me evado y permanezco en mi mundo.",
+                "eneatipo": "6"
+            }, {
+                "id": "1611063598",
+                "pregunta": "Un defecto al final de un buen trabajo, arruina el conjunto. Puedo obsesionarme con hacer muy bien las cosas.",
+                "eneatipo": "3"
+            }, {
+                "id": "1611063614",
+                "pregunta": "Siento la necesidad de lograr grandes \u00e9xitos y ser eficiente.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611063633",
+                "pregunta": "Puedo vivir con pocas comodidades. Suelo recoger y acumular elementos que pueda necesitar alg\u00fan d\u00eda.",
+                "eneatipo": "7"
+            }, {
+                "id": "1611063645",
+                "pregunta": "Soy juicioso y suelo seguir las normas, sin embargo hay momentos en los que me rebelo.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611063657",
+                "pregunta": "S\u00e9 de muchas cosas, el inter\u00e9s global que tengo es una de mis buenas cualidades. Me ayuda a ser pr\u00e1ctico.",
+                "eneatipo": "9"
+            }, {
+                "id": "1611063673",
+                "pregunta": "Si es necesario quito importancia a las dificultades para que los otros se tranquilicen.",
+                "eneatipo": "2"
+            }, {
+                "id": "1611063685",
+                "pregunta": "Sin leyes es complejo convivir. Me disgusta cuando alguien rompe la ley y se sale con la suya.",
+                "eneatipo": "8"
+            }, {
+                "id": "1611063699",
+                "pregunta": "Identifico r\u00e1pidamente quien tiene el poder en el grupo, y as\u00ed saber a quien enfrento.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611063711",
+                "pregunta": "Tener control es clave para mi: tanta democracia hace da\u00f1o.",
+                "eneatipo": "1"
+            }, {
+                "id": "1611063730",
+                "pregunta": "Me gusta trabajar en equipo, ser eficiente y admirado. Soy un buen activo del grupo.",
+                "eneatipo": "5"
+            }, {
+                "id": "1611063743",
+                "pregunta": "S\u00e9 que soy una persona organizada y met\u00f3dica. Me ayuda a mantener el control.",
+                "eneatipo": "3"
+            }
+        ]
+    }
 ]
