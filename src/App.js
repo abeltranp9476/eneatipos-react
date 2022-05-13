@@ -6,6 +6,7 @@ import data from './questions.json';
 import './App.css';
 import Navbar1 from './components/navbar/Navbar1';
 import Welcome from './components/welcome/Welcome';
+import Results from './components/results/Results';
 
 
 function App() {
@@ -49,6 +50,10 @@ function App() {
 
   const handleStart = (e) => {
     setStart(true);
+  }
+
+  const handleRestart = (e) => {
+    setStart(false);
   }
 
   const handleNext = (e) => {
@@ -191,9 +196,10 @@ function App() {
         <div className="row">
           {
             (start) ? (
-              (showResult) ? (
-                <>
-                </>
+              (!showResult) ? (
+                <div className="mt-5">
+                  <Results eneatipo={eneatipo} ala={ala} restartButtonClick={handleRestart} />
+                </div>
               ) : (
                 <>
                   <div className="mt-5">
@@ -253,7 +259,7 @@ function App() {
 
                         {
                           (step === totalSteps) ? (
-                            <Button color="success" onClick={(e) => handleResult(e)}>Obtener eneatipo</Button>
+                            <Button className="btn-lg m-2" color="success" onClick={(e) => handleResult(e)}>Obtener eneatipo</Button>
                           ) : (
                             <Button color="primary" onClick={(e) => handleNext(e)} className="m-2">Siguiente</Button>
                           )
