@@ -21,7 +21,7 @@ function Results(props) {
                             <b>Ala:</b> {props.ala}
                         </CardText>
                         <div className="col text-center">
-                            <Button onClick={props.restartButtonClick}>
+                            <Button href="/">
                                 Volver a realizar
                             </Button>
                         </div>
