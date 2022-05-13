@@ -23,6 +23,7 @@ function App() {
 
   const [formState, setFormState] = useState({
     values: {},
+    checked: {},
   });
 
   useEffect(() => {
@@ -35,11 +36,12 @@ function App() {
     const answerTotal = Object.keys(formState.values).length;
     if (finish && answerTotal < 100) {
       alert('Debe seleccionar mínimo 100 oraciones.');
+      setFinish(false);
     } else if (finish) {
       setShowResult(true);
       alert('Tu eneatipo es: ' + eneatipo + ' y tu ala: ' + ala);
     }
-  }, [finish, formState.values, ala])
+  }, [finish, formState.values, ala, eneatipo])
 
 
   const handleNext = (e) => {
@@ -111,6 +113,11 @@ function App() {
     return Object.entries(formState.values).find(i => i[0] == keyCompare);
   }
 
+  const isCheckedBox = (keyCompare) => {
+    return Object.entries(formState.checked).find(i => i[0] == keyCompare && i[1] == 'checked');
+  }
+
+
   const determineAlasFromEneatipo = (eneatipo) => {
     if (eneatipo == 1) return [9, 2];
     if (eneatipo == 9) return [8, 1];
@@ -129,6 +136,16 @@ function App() {
     }
   }
 
+  const detectState = (field, name, value) => {
+    if (field === 'checkbox') {
+      if (isCheckedBox(name)) {
+        return '';
+      } else {
+        return 'checked';
+      }
+    }
+  }
+
   const handleChange = event => {
     event.persist();
 
@@ -138,6 +155,15 @@ function App() {
         ...formState.values,
         [event.target.name]:
           stractSelectField(event.target.type, event.target.value, event.target.files, event.target.name)
+      }
+    }));
+
+    setFormState(formState => ({
+      ...formState,
+      checked: {
+        ...formState.checked,
+        [event.target.name]:
+          detectState(event.target.type, event.target.name, event.target.value)
       }
     }));
   };
@@ -176,6 +202,7 @@ function App() {
                                   name={q.id}
                                   value={q.eneatipo}
                                   type="checkbox"
+                                  checked={formState.checked[q.id]}
                                   onClick={(e) => handleChange(e)}
                                 />
                               </FormGroup>
