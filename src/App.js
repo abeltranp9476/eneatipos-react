@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Table, Label, FormGroup, Input } from 'reactstrap';
+import { Button, Table, Label, FormGroup, Input, Progress } from 'reactstrap';
 import logo from './logo.svg';
 import data from './questions.json';
 import './App.css';
@@ -23,6 +23,7 @@ function App() {
   const [eneatipo, setEneatipo] = useState(false);
   const [alas, setAlas] = useState([]);
   const [ala, setAla] = useState(false);
+  const [percent, setPercent] = useState(0);
 
   const [formState, setFormState] = useState({
     values: {},
@@ -53,13 +54,22 @@ function App() {
   const handleNext = (e) => {
     e.preventDefault()
     if (step === totalSteps) return false;
+    window.scrollTo(0, 0);
     setStep(step + 1);
+    calculatePercent();
   }
 
   const handleBack = (e) => {
     e.preventDefault()
     if (step === 1) return false;
+    window.scrollTo(0, 0);
     setStep(step - 1);
+    calculatePercent();
+  }
+
+  const calculatePercent = () => {
+    let calc = (step + 1) / totalSteps * 100;
+    setPercent(calc);
   }
 
   const handleResult = (e) => {
@@ -181,13 +191,18 @@ function App() {
         <div className="row">
           {
             (start) ? (
-
               (showResult) ? (
                 <>
                 </>
               ) : (
                 <>
-                  <Table className="mt-5">
+                  <div className="mt-5">
+                    <Progress className="mt-4"
+                      color={(percent === 100) ? 'success' : 'primary'}
+                      value={percent}
+                    />
+                  </div>
+                  <Table className="mt-1">
                     <thead>
                       <tr>
                         <th>
