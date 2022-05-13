@@ -5,12 +5,14 @@ import logo from './logo.svg';
 import data from './questions.json';
 import './App.css';
 import Navbar1 from './components/navbar/Navbar1';
+import Welcome from './components/welcome/Welcome';
 
 
 function App() {
   const perPage = 30;
   const totalSteps = 9;
   const min = 100;
+  const [start, setStart] = useState(false);
   const [step, setStep] = useState(1);
   const [pageStart, setPageStart] = useState(0);
   const [pageEnd, setPageEnd] = useState(perPage);
@@ -44,6 +46,9 @@ function App() {
     }
   }, [finish, formState.values, ala, eneatipo])
 
+  const handleStart = (e) => {
+    setStart(true);
+  }
 
   const handleNext = (e) => {
     e.preventDefault()
@@ -175,72 +180,79 @@ function App() {
       <div className="container">
         <div className="row">
           {
-            (showResult) ? (
-              <>
-              </>
-            ) : (
-              <>
-                <Table className="mt-5">
-                  <thead>
-                    <tr>
-                      <th>
-                        #
-                      </th>
-                      <th>
-                        Pregunta
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {
-                      questions.slice(pageStart, pageEnd).map((q, i) => (
-                        <>
-                          <tr key={i}>
-                            <th scope="row">
-                              <FormGroup check>
-                                <Input
-                                  key={q.id}
-                                  name={q.id}
-                                  value={q.eneatipo}
-                                  type="checkbox"
-                                  checked={formState.checked[q.id]}
-                                  onClick={(e) => handleChange(e)}
-                                />
-                              </FormGroup>
-                            </th>
-                            <td>
-                              {q.pregunta}
-                            </td>
-                          </tr>
-                        </>
-                      ))
-                    }
-                  </tbody>
-                </Table >
-                <div className="row">
-                  <div className="col-lg-12">
-                    {
-                      (step === 1) ? (
-                        <>
-                        </>
-                      ) : (
-                        <Button color="primary" onClick={(e) => handleBack(e)} className="m-2">Anterior</Button>
-                      )
-                    }
+            (start) ? (
 
-                    {
-                      (step === totalSteps) ? (
-                        <Button color="success" onClick={(e) => handleResult(e)}>Obtener eneatipo</Button>
-                      ) : (
-                        <Button color="primary" onClick={(e) => handleNext(e)} className="m-2">Siguiente</Button>
-                      )
-                    }
+              (showResult) ? (
+                <>
+                </>
+              ) : (
+                <>
+                  <Table className="mt-5">
+                    <thead>
+                      <tr>
+                        <th>
+                          #
+                        </th>
+                        <th>
+                          Pregunta
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {
+                        questions.slice(pageStart, pageEnd).map((q, i) => (
+                          <>
+                            <tr key={i}>
+                              <th scope="row">
+                                <FormGroup check>
+                                  <Input
+                                    key={q.id}
+                                    name={q.id}
+                                    value={q.eneatipo}
+                                    type="checkbox"
+                                    checked={formState.checked[q.id]}
+                                    onClick={(e) => handleChange(e)}
+                                  />
+                                </FormGroup>
+                              </th>
+                              <td>
+                                {q.pregunta}
+                              </td>
+                            </tr>
+                          </>
+                        ))
+                      }
+                    </tbody>
+                  </Table >
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="col text-center">
+                        {
+                          (step === 1) ? (
+                            <>
+                            </>
+                          ) : (
+                            <Button color="primary" onClick={(e) => handleBack(e)} className="m-2">Anterior</Button>
+                          )
+                        }
+
+                        {
+                          (step === totalSteps) ? (
+                            <Button color="success" onClick={(e) => handleResult(e)}>Obtener eneatipo</Button>
+                          ) : (
+                            <Button color="primary" onClick={(e) => handleNext(e)} className="m-2">Siguiente</Button>
+                          )
+                        }
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </>
+                </>
+              )
+
+            ) : (
+              <Welcome startButtonClick={handleStart} />
             )
           }
-
         </div >
       </div >
     </div >
