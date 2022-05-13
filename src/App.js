@@ -101,7 +101,6 @@ function App() {
       setAla('No definido');
     }
 
-
   }
 
   const determineEneatipoFromValue = (object, value) => {
@@ -119,19 +118,15 @@ function App() {
   }
 
   const stractSelectField = (field, value, files, name) => {
-    alert(name);
     if (isChecked(name)) {
-      alert('Ya estaba');
-      var temp = formState.values;
-      delete temp.name;
-      setFormState(formState => ({
-        values: { temp }
-      }));
+      setFormState((state) => {
+        let temp = state;
+        delete temp.values[name];
+        return temp;
+      });
     } else {
-      alert('No estaba');
+      return value;
     }
-    console.log(temp);
-    return value;
   }
 
   const handleChange = event => {
@@ -146,7 +141,6 @@ function App() {
       }
     }));
   };
-
 
   return (
     <div>
