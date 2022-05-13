@@ -10,6 +10,7 @@ import Navbar1 from './components/navbar/Navbar1';
 function App() {
   const perPage = 30;
   const totalSteps = 9;
+  const min = 100;
   const [step, setStep] = useState(1);
   const [pageStart, setPageStart] = useState(0);
   const [pageEnd, setPageEnd] = useState(perPage);
@@ -170,7 +171,7 @@ function App() {
 
   return (
     <div>
-      <Navbar1 title="Test Eneagrama" counter={Object.keys(formState.values).length} />
+      <Navbar1 title="Test Eneagrama" total={min} counter={Object.keys(formState.values).length} />
       <div className="container">
         <div className="row">
           {
