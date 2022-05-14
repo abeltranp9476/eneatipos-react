@@ -45,7 +45,7 @@ function App() {
       setFinish(false);
     } else if (finish) {
       setShowResult(true);
-      alert('Tu eneatipo es: ' + eneatipo + ' y tu ala: ' + ala);
+      //alert('Tu eneatipo es: ' + eneatipo + ' y tu ala: ' + ala);
     }
   }, [finish, formState.values, ala, eneatipo])
 
