@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate, Routes, Route } from "react-router-dom";
+import React, { DocumentTitle, useState, useEffect } from 'react';
+import { Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Table, Label, FormGroup, Input, Progress } from 'reactstrap';
+import { Button, Table, FormGroup, Input, Progress } from 'reactstrap';
 import logo from './logo.svg';
 import data from './questions.json';
 import './App.css';
@@ -10,13 +10,12 @@ import Welcome from './components/welcome/Welcome';
 import Results from './components/results/Results';
 
 function App() {
-  const navigate = useNavigate();
   const perPage = 30;
   const totalSteps = 9;
   const min = 100;
   const [start, setStart] = useState(false);
-  const [step, setStep] = useState(1);
-  const [pageStart, setPageStart] = useState(0);
+  const [step, setStep] = useState(0);
+  const [pageStart, setPageStart] = useState(1);
   const [pageEnd, setPageEnd] = useState(perPage);
   const questions = data[2].data;
   const [finish, setFinish] = useState(false);
@@ -50,11 +49,11 @@ function App() {
   }, [finish, formState.values, ala, eneatipo])
 
   const handleStart = (e) => {
+    document.title = "Oraciones - Eneagrama";
     setStart(true);
-  }
-
-  const handleRestart = (e) => {
-    return navigate('/welcome');
+    setStep(step + 1);
+    calculatePercent('next');
+    window.scrollTo(0, 0);
   }
 
   const handleNext = (e) => {
@@ -62,7 +61,7 @@ function App() {
     if (step === totalSteps) return false;
     window.scrollTo(0, 0);
     setStep(step + 1);
-    calculatePercent();
+    calculatePercent('next');
   }
 
   const handleBack = (e) => {
@@ -70,12 +69,15 @@ function App() {
     if (step === 1) return false;
     window.scrollTo(0, 0);
     setStep(step - 1);
-    calculatePercent();
+    calculatePercent('back');
   }
 
-  const calculatePercent = () => {
-    let calc = (step + 1) / totalSteps * 100;
+  const calculatePercent = (mode) => {
+    let calc;
+    if (mode === 'next') calc = (step + 1) / totalSteps * 100;
+    if (mode === 'back') calc = (step - 1) / totalSteps * 100;
     setPercent(calc);
+    //console.log(step);
   }
 
   const handleResult = (e) => {
@@ -192,7 +194,12 @@ function App() {
 
   return (
     <div>
-      <Navbar1 title="Test Eneagrama" total={min} counter={Object.keys(formState.values).length} />
+      <Navbar1
+        title="Test Eneagrama"
+        total={min}
+        counter={Object.keys(formState.values).length}
+        start={start}
+      />
       <Routes>
         <Route path="*" element={<div className="mt-5">404</div>} />
         <Route path="/" element={
@@ -202,7 +209,7 @@ function App() {
                 (start) ? (
                   (showResult) ? (
                     <div className="mt-5">
-                      <Results eneatipo={eneatipo} ala={ala} restartButtonClick={handleRestart} />
+                      <Results eneatipo={eneatipo} ala={ala} />
                     </div>
                   ) : (
                     <>
@@ -210,16 +217,18 @@ function App() {
                         <Progress className="mt-4"
                           color={(percent === 100) ? 'success' : 'primary'}
                           value={percent}
-                        />
+                        >
+                          {Math.round(percent)} % Completado
+                        </Progress>
                       </div>
                       <Table className="mt-1">
                         <thead>
                           <tr>
                             <th>
-                              #
+
                             </th>
                             <th>
-                              Pregunta
+                              Oración
                             </th>
                           </tr>
                         </thead>
@@ -257,15 +266,15 @@ function App() {
                                 <>
                                 </>
                               ) : (
-                                <Button color="primary" onClick={(e) => handleBack(e)} className="m-2">Anterior</Button>
+                                <Button color="primary" onClick={(e) => handleBack(e)} className="m-2 mb-3">Anterior</Button>
                               )
                             }
 
                             {
                               (step === totalSteps) ? (
-                                <Button className="btn-lg m-2" color="success" onClick={(e) => handleResult(e)}>Obtener eneatipo</Button>
+                                <Button className="btn-lg m-2 mb-3" color="success" onClick={(e) => handleResult(e)}>Obtener eneatipo</Button>
                               ) : (
-                                <Button color="primary" onClick={(e) => handleNext(e)} className="m-2">Siguiente</Button>
+                                <Button color="primary" onClick={(e) => handleNext(e)} className="m-2 mb-3">Siguiente</Button>
                               )
                             }
                           </div>
@@ -281,10 +290,16 @@ function App() {
             </div >
           </div >
 
-
         } />
-      </Routes>
 
+      </Routes>
+      <footer className="footer">
+        <div className="container">
+          <span className="text-muted">
+            Developer: <a href="https://abeltranp94.is-a.dev" target="_blank">abeltranp94.is-a.dev</a>
+          </span>
+        </div>
+      </footer>
     </div >
 
   );
