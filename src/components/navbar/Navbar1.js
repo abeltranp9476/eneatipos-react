@@ -10,6 +10,7 @@ function Navbar1(props) {
                 expand="md"
                 fixed="top"
                 light
+                style={{ backgroundColor: 'red' }}
             >
                 <NavbarBrand href="/">
                     {props.title} {(props.start) ? (+ ' ' + props.counter + '/' + props.total) : (<></>)}

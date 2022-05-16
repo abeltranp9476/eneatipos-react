@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { DocumentTitle, useState, useEffect } from 'react';
 import { Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Table, FormGroup, Input, Progress } from 'reactstrap';
@@ -49,6 +49,7 @@ function App() {
   }, [finish, formState.values, ala, eneatipo])
 
   const handleStart = (e) => {
+    document.title = "Oraciones - Eneagrama";
     setStart(true);
     setStep(step + 1);
     calculatePercent('next');
