@@ -216,7 +216,9 @@ function App() {
                         <Progress className="mt-4"
                           color={(percent === 100) ? 'success' : 'primary'}
                           value={percent}
-                        />
+                        >
+                          {Math.round(percent)} % Completado
+                        </Progress>
                       </div>
                       <Table className="mt-1">
                         <thead>
