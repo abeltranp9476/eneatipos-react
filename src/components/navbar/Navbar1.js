@@ -12,7 +12,7 @@ function Navbar1(props) {
                 light
             >
                 <NavbarBrand href="/">
-                    {props.title + ' ' + props.counter + '/' + props.total}
+                    {props.title} {(props.start) ? (+ ' ' + props.counter + '/' + props.total) : (<></>)}
                 </NavbarBrand>
                 <NavbarToggler onClick={function noRefCheck() { }} />
                 <Collapse navbar>
