@@ -1,13 +1,16 @@
-import React, { DocumentTitle, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Table, FormGroup, Input, Progress } from 'reactstrap';
-import logo from './logo.svg';
 import data from './questions.json';
 import './App.css';
 import Navbar1 from './components/navbar/Navbar1';
 import Welcome from './components/welcome/Welcome';
 import Results from './components/results/Results';
+import Questions from './components/questions/Questions';
+import ProgressBar from './components/progressBar/ProgressBar';
+import NavigationButons from './components/navigationButtons/NavigationButons';
+import Footer from './components/footer/Footer';
+import Content from './components/content/Content';
 
 function App() {
   const perPage = 30;
@@ -20,9 +23,9 @@ function App() {
   const questions = data[2].data;
   const [finish, setFinish] = useState(false);
   const [showResult, setShowResult] = useState(false);
-  const [desglose, setDesglose] = useState([]);
+  //const [desglose, setDesglose] = useState([]);
   const [eneatipo, setEneatipo] = useState(false);
-  const [alas, setAlas] = useState([]);
+  //const [alas, setAlas] = useState([]);
   const [ala, setAla] = useState(false);
   const [percent, setPercent] = useState(0);
 
@@ -88,7 +91,7 @@ function App() {
     var array = [];
 
     Object.keys(formState.values).map((key, index) => {
-      array.push(formState.values[key]);
+      return array.push(formState.values[key]);
     })
 
     var repetidos = {};
@@ -98,7 +101,7 @@ function App() {
     });
 
     //console.log(repetidos);
-    setDesglose(repetidos);
+    //setDesglose(repetidos);
     analize(repetidos);
     setFinish(true);
   }
@@ -123,28 +126,28 @@ function App() {
       setAla(alas[0]);
     } else if (data[alas[0]] < data[alas[1]]) {
       setAla(alas[1]);
-    } else if (data[alas[0]] == data[alas[1]]) {
+    } else if (data[alas[0]] === data[alas[1]]) {
       setAla('No definido');
     }
 
   }
 
   const determineEneatipoFromValue = (object, value) => {
-    return Object.entries(object).find(i => i[1] == value)[0];
+    return Object.entries(object).find(i => i[1] === value)[0];
   }
 
   const isChecked = (keyCompare) => {
-    return Object.entries(formState.values).find(i => i[0] == keyCompare);
+    return Object.entries(formState.values).find(i => i[0] === keyCompare);
   }
 
   const isCheckedBox = (keyCompare) => {
-    return Object.entries(formState.checked).find(i => i[0] == keyCompare && i[1] == 'checked');
+    return Object.entries(formState.checked).find(i => i[0] === keyCompare && i[1] === 'checked');
   }
 
 
   const determineAlasFromEneatipo = (eneatipo) => {
-    if (eneatipo == 1) return [9, 2];
-    if (eneatipo == 9) return [8, 1];
+    if (eneatipo === 1) return [9, 2];
+    if (eneatipo === 9) return [8, 1];
     return [eneatipo - 1, eneatipo + 1];
   }
 
@@ -192,116 +195,68 @@ function App() {
     }));
   };
 
+  const handleRevisar = () => {
+    setShowResult(false);
+    setFinish(false);
+  }
+
   return (
-    <div>
+    <>
       <Navbar1
         title="Test Eneagrama"
         total={min}
         counter={Object.keys(formState.values).length}
         start={start}
       />
+
       <Routes>
         <Route path="*" element={<div className="mt-5">404</div>} />
         <Route path="/" element={
-          <div className="container">
-            <div className="row">
-              {
-                (start) ? (
-                  (showResult) ? (
-                    <div className="mt-5">
-                      <Results eneatipo={eneatipo} ala={ala} />
-                    </div>
-                  ) : (
-                    <>
-                      <div className="mt-5">
-                        <Progress className="mt-4"
-                          color={(percent === 100) ? 'success' : 'primary'}
-                          value={percent}
-                        >
-                          {Math.round(percent)} % Completado
-                        </Progress>
-                      </div>
-                      <Table className="mt-1">
-                        <thead>
-                          <tr>
-                            <th>
-
-                            </th>
-                            <th>
-                              Oración
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {
-                            questions.slice(pageStart, pageEnd).map((q, i) => (
-                              <>
-                                <tr key={i}>
-                                  <th scope="row">
-                                    <FormGroup check>
-                                      <Input
-                                        key={q.id}
-                                        name={q.id}
-                                        value={q.eneatipo}
-                                        type="checkbox"
-                                        checked={formState.checked[q.id]}
-                                        onClick={(e) => handleChange(e)}
-                                      />
-                                    </FormGroup>
-                                  </th>
-                                  <td>
-                                    {q.pregunta}
-                                  </td>
-                                </tr>
-                              </>
-                            ))
-                          }
-                        </tbody>
-                      </Table >
-                      <div className="row">
-                        <div className="col-lg-12">
-                          <div className="col text-center">
-                            {
-                              (step === 1) ? (
-                                <>
-                                </>
-                              ) : (
-                                <Button color="primary" onClick={(e) => handleBack(e)} className="m-2 mb-3">Anterior</Button>
-                              )
-                            }
-
-                            {
-                              (step === totalSteps) ? (
-                                <Button className="btn-lg m-2 mb-3" color="success" onClick={(e) => handleResult(e)}>Obtener eneatipo</Button>
-                              ) : (
-                                <Button color="primary" onClick={(e) => handleNext(e)} className="m-2 mb-3">Siguiente</Button>
-                              )
-                            }
-                          </div>
-                        </div>
-                      </div>
-                    </>
-                  )
-
+          <Content>
+            {
+              (start) ? (
+                (showResult) ? (
+                  <Results
+                    eneatipo={eneatipo}
+                    ala={ala}
+                    handleRevisar={handleRevisar}
+                  />
                 ) : (
-                  <Welcome startButtonClick={handleStart} />
+                  <>
+                    <ProgressBar
+                      percent={percent}
+                    />
+
+                    <Questions
+                      questions={questions}
+                      pageStart={pageStart}
+                      pageEnd={pageEnd}
+                      formState={formState}
+                      handleChange={handleChange}
+                    />
+
+                    <NavigationButons
+                      step={step}
+                      totalSteps={totalSteps}
+                      handleNext={handleNext}
+                      handleBack={handleBack}
+                      handleResult={handleResult}
+                    />
+                  </>
                 )
-              }
-            </div >
-          </div >
+
+              ) : (
+                <Welcome startButtonClick={handleStart} />
+              )
+            }
+
+          </Content>
 
         } />
+      </Routes >
 
-      </Routes>
-      <footer className="footer">
-        <div className="container">
-          <span className="text-muted">
-            Developer: <a href="https://abeltranp94.is-a.dev" target="_blank">abeltranp94.is-a.dev</a>
-          </span>
-        </div>
-      </footer>
-    </div >
-
+      <Footer />
+    </>
   );
 }
 
