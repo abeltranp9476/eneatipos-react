@@ -11,6 +11,7 @@ import ProgressBar from './components/progressBar/ProgressBar';
 import NavigationButons from './components/navigationButtons/NavigationButons';
 import Footer from './components/footer/Footer';
 import Content from './components/content/Content';
+import { useFormik, useField } from 'formik';
 
 function App() {
   const perPage = 30;
@@ -34,11 +35,14 @@ function App() {
     checked: {},
   });
 
+  const formik = useFormik({
+    initialValues: {},
+  });
+
   useEffect(() => {
     setPageStart(perPage * (step - 1));
     setPageEnd(perPage * step);
   }, [pageStart, step])
-
 
   useEffect(() => {
     const answerTotal = Object.keys(formState.values).length;
@@ -49,9 +53,10 @@ function App() {
       setShowResult(true);
       //alert('Tu eneatipo es: ' + eneatipo + ' y tu ala: ' + ala);
     }
-  }, [finish, formState.values, ala, eneatipo])
+  }, [finish, ala, eneatipo])
 
-  const handleStart = (e) => {
+
+  const handleStart = () => {
     document.title = "Oraciones - Eneagrama";
     setStart(true);
     setStep(step + 1);
@@ -59,16 +64,14 @@ function App() {
     window.scrollTo(0, 0);
   }
 
-  const handleNext = (e) => {
-    e.preventDefault()
+  const handleNext = () => {
     if (step === totalSteps) return false;
     window.scrollTo(0, 0);
     setStep(step + 1);
     calculatePercent('next');
   }
 
-  const handleBack = (e) => {
-    e.preventDefault()
+  const handleBack = () => {
     if (step === 1) return false;
     window.scrollTo(0, 0);
     setStep(step - 1);
@@ -83,8 +86,7 @@ function App() {
     //console.log(step);
   }
 
-  const handleResult = (e) => {
-    e.preventDefault()
+  const handleResult = () => {
 
     if (Object.keys(formState.values) < 1) return false;
 
@@ -154,9 +156,10 @@ function App() {
   const stractSelectField = (field, value, files, name) => {
     if (isChecked(name)) {
       setFormState((state) => {
-        let temp = state;
-        delete temp.values[name];
-        return temp;
+        delete state.values[name];
+        delete state.checked[name];
+        console.log(state);
+        return state;
       });
     } else {
       return value;
@@ -167,15 +170,13 @@ function App() {
     if (field === 'checkbox') {
       if (isCheckedBox(name)) {
         return '';
-      } else {
-        return 'checked';
       }
+      return 'checked';
     }
   }
 
   const handleChange = event => {
     event.persist();
-
     setFormState(formState => ({
       ...formState,
       values: {
@@ -205,7 +206,7 @@ function App() {
       <Navbar1
         title="Test Eneagrama"
         total={min}
-        counter={Object.keys(formState.values).length}
+        counter={Object.keys(formik.values).length}
         start={start}
       />
 
@@ -232,7 +233,8 @@ function App() {
                       pageStart={pageStart}
                       pageEnd={pageEnd}
                       formState={formState}
-                      handleChange={handleChange}
+                      useField={useField}
+                      handleChange={formik.handleChange}
                     />
 
                     <NavigationButons
