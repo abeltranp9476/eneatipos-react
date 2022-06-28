@@ -11,7 +11,7 @@ import ProgressBar from './components/progressBar/ProgressBar';
 import NavigationButons from './components/navigationButtons/NavigationButons';
 import Footer from './components/footer/Footer';
 import Content from './components/content/Content';
-import { useFormik, useField } from 'formik';
+import { useFormik } from 'formik';
 
 function App() {
   const perPage = 30;
@@ -24,16 +24,9 @@ function App() {
   const questions = data[2].data;
   const [finish, setFinish] = useState(false);
   const [showResult, setShowResult] = useState(false);
-  //const [desglose, setDesglose] = useState([]);
   const [eneatipo, setEneatipo] = useState(false);
-  //const [alas, setAlas] = useState([]);
   const [ala, setAla] = useState(false);
   const [percent, setPercent] = useState(0);
-
-  const [formState, setFormState] = useState({
-    values: {},
-    checked: {},
-  });
 
   const formik = useFormik({
     initialValues: {},
@@ -45,7 +38,7 @@ function App() {
   }, [pageStart, step])
 
   useEffect(() => {
-    const answerTotal = Object.keys(formState.values).length;
+    const answerTotal = getTotal();
     if (finish && answerTotal < 100) {
       alert('Debe seleccionar mínimo 100 oraciones.');
       setFinish(false);
@@ -88,12 +81,12 @@ function App() {
 
   const handleResult = () => {
 
-    if (Object.keys(formState.values) < 1) return false;
+    if (getTotal() < 1) return false;
 
     var array = [];
 
-    Object.keys(formState.values).map((key, index) => {
-      return array.push(formState.values[key]);
+    Object.keys(formik.values).map((key, index) => {
+      if (formik.values[key][0]) return array.push(formik.values[key]);
     })
 
     var repetidos = {};
@@ -102,8 +95,7 @@ function App() {
       repetidos[numero] = (repetidos[numero] || 0) + 1;
     });
 
-    //console.log(repetidos);
-    //setDesglose(repetidos);
+    console.log(repetidos);
     analize(repetidos);
     setFinish(true);
   }
@@ -138,14 +130,6 @@ function App() {
     return Object.entries(object).find(i => i[1] === value)[0];
   }
 
-  const isChecked = (keyCompare) => {
-    return Object.entries(formState.values).find(i => i[0] === keyCompare);
-  }
-
-  const isCheckedBox = (keyCompare) => {
-    return Object.entries(formState.checked).find(i => i[0] === keyCompare && i[1] === 'checked');
-  }
-
 
   const determineAlasFromEneatipo = (eneatipo) => {
     if (eneatipo === 1) return [9, 2];
@@ -153,48 +137,14 @@ function App() {
     return [eneatipo - 1, eneatipo + 1];
   }
 
-  const stractSelectField = (field, value, files, name) => {
-    if (isChecked(name)) {
-      setFormState((state) => {
-        delete state.values[name];
-        delete state.checked[name];
-        console.log(state);
-        return state;
-      });
-    } else {
-      return value;
-    }
+  const getTotal = () => {
+    var array = [];
+    Object.keys(formik.values).map((key, index) => {
+      if (formik.values[key][0]) return array.push(formik.values[key]);
+    })
+    return Object.keys(array).length
   }
 
-  const detectState = (field, name, value) => {
-    if (field === 'checkbox') {
-      if (isCheckedBox(name)) {
-        return '';
-      }
-      return 'checked';
-    }
-  }
-
-  const handleChange = event => {
-    event.persist();
-    setFormState(formState => ({
-      ...formState,
-      values: {
-        ...formState.values,
-        [event.target.name]:
-          stractSelectField(event.target.type, event.target.value, event.target.files, event.target.name)
-      }
-    }));
-
-    setFormState(formState => ({
-      ...formState,
-      checked: {
-        ...formState.checked,
-        [event.target.name]:
-          detectState(event.target.type, event.target.name, event.target.value)
-      }
-    }));
-  };
 
   const handleRevisar = () => {
     setShowResult(false);
@@ -206,7 +156,7 @@ function App() {
       <Navbar1
         title="Test Eneagrama"
         total={min}
-        counter={Object.keys(formik.values).length}
+        counter={getTotal()}
         start={start}
       />
 
@@ -232,8 +182,6 @@ function App() {
                       questions={questions}
                       pageStart={pageStart}
                       pageEnd={pageEnd}
-                      formState={formState}
-                      useField={useField}
                       handleChange={formik.handleChange}
                     />
 
