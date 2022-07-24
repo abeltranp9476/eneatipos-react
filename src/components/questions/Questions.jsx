@@ -19,7 +19,7 @@ function Questions(props) {
                 {
                     props.questions.slice(props.pageStart, props.pageEnd).map((q, i) => (
                         <>
-                            <tr key={i.toString()}>
+                            <tr>
                                 <td scope="row">
                                     <Formik
                                         initialValues={{
@@ -32,7 +32,7 @@ function Questions(props) {
                                         <Form>
                                             <Mycheckbox
                                                 key={q.id.toString()}
-                                                name={q.id}
+                                                name={q.id.toString()}
                                                 value={q.eneatipo}
                                                 onClick={props.handleChange}
                                             >
